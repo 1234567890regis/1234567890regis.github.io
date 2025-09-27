@@ -1879,6 +1879,9 @@ ul.kratos-post-meta:not(:last-child) {
 #kratos-widget-area .widget.widget-kratos-archive li:before {
 	content:"\f133"
 }
+#kratos-widget-area .widget.widget-kratos-categories {
+	border-radius: 10px;
+}
 #kratos-widget-area .widget.widget-kratos-categories li {
 	margin-left:10px
 }
