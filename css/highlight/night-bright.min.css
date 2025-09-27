@@ -110,31 +110,6 @@ figure.highlight:hover>button.copy {
 figure.highlight:hover>button.copy:hover {
 	color:#70c0b1
 }
-.title_example{
-    font-size: 3em;
-    color: white;
-    margin: auto;
-    display: table;
-    align-items: center;
-}
-.title_example span{
-    transition: 0.5s;
-}
-.title_example:hover span:nth-child(1){
-    margin-right: 10px;
-}
-.title_example:hover span:nth-child(2){
-    margin-left: 10px;
-}
-.title_example:hover span{
-    color: #fff;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff,
-                 0 0 40px #fff,
-                 0 0 80px #fff,
-                 0 0 120px #fff,
-                 0 0 160px #fff;
-}
 .gist table {
 	width:auto
 }

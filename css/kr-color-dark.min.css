@@ -93,31 +93,6 @@ ul.kratos-post-meta,ul.kratos-post-meta a,ul.kratos-post-meta span {
 	background-color:rgba(60,73,91,.733);
 	color:#eee
 }
-.title_example{
-    font-size: 3em;
-    color: white;
-    margin: auto;
-    display: table;
-    align-items: center;
-}
-.title_example span{
-    transition: 0.5s;
-}
-.title_example:hover span:nth-child(1){
-    margin-right: 10px;
-}
-.title_example:hover span:nth-child(2){
-    margin-left: 10px;
-}
-.title_example:hover span{
-    color: #fff;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff,
-                 0 0 40px #fff,
-                 0 0 80px #fff,
-                 0 0 120px #fff,
-                 0 0 160px #fff;
-}
 .pagination a,.pagination span {
 	background-color:rgba(37,45,56,.875);
 	color:#eee
