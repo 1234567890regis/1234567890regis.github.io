@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/images/icon.ico">
   
-  <title>Tree-Of-Treaps | Regis&#39;s Blog</title>
+  <title>Monthly-Problem-Notes | Regis&#39;s Blog</title>
   
   <meta name="author" content="1234567890regis" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -17,16 +17,16 @@
   
     <meta name="keywords" content="" />
   
-  <meta name="description" content="树套树这么好写？？？再也不写主席树啦！ 感觉树套树除了带了  个 log 以外完全没有问题啊。 代码只比线段树板子多了几行。。。 板子 AC Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566">
+  <meta name="description" content="Every month starting from June, I will choose one very interesting problem and write a note (subtasks, thinking process, solution, etc) on this problem. ty benson1029 for suggesting this idea :) MayIn">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Tree-Of-Treaps">
-<meta property="og:url" content="https://1234567890regis.github.io/2025/12/27/Tree-Of-Treaps/index.html">
+<meta property="og:title" content="Monthly-Problem-Notes">
+<meta property="og:url" content="https://1234567890regis.github.io/2026/05/31/Monthly-Problem-Notes/index.html">
 <meta property="og:site_name" content="Regis&#39;s Blog">
-<meta property="og:description" content="树套树这么好写？？？再也不写主席树啦！ 感觉树套树除了带了  个 log 以外完全没有问题啊。 代码只比线段树板子多了几行。。。 板子 AC Code: 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566">
+<meta property="og:description" content="Every month starting from June, I will choose one very interesting problem and write a note (subtasks, thinking process, solution, etc) on this problem. ty benson1029 for suggesting this idea :) MayIn">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://1234567890regis.github.io/images/icon.ico">
-<meta property="article:published_time" content="2025-12-26T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-01T12:20:25.916Z">
+<meta property="article:published_time" content="2026-05-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-01T12:30:30.408Z">
 <meta property="article:author" content="1234567890regis">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://1234567890regis.github.io/images/icon.ico">
@@ -234,15 +234,15 @@ mjx-container[display="true"] + br {
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://1234567890regis.github.io/2025/12/27/Tree-Of-Treaps/">
+    <link itemprop="mainEntityOfPage" href="https://1234567890regis.github.io/2026/05/31/Monthly-Problem-Notes/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">Tree-Of-Treaps</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Monthly-Problem-Notes</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2025-12-26T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-12-27</time></li>
+                <li><time datetime="2026-05-30T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2026-05-31</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">1234567890regis</span>
                 </li>
@@ -251,7 +251,7 @@ mjx-container[display="true"] + br {
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~3.41K
+                            ~3.50K
                         
                         字
                     </li>
@@ -268,18 +268,62 @@ mjx-container[display="true"] + br {
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1780316425916"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1780317030408"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>树套树这么好写？？？再也不写主席树啦！</p>
-<p><del>感觉树套树除了带了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.554ex" role="img" focusable="false" viewBox="0 -665 500 687"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></g></g></svg></mjx-container> 个 log 以外完全没有问题啊。</del></p>
-<p>代码只比线段树板子多了几行。。。</p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3380">板子</a></p>
-<p>AC Code:</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> debug(x) cerr &lt;&lt; #x &lt;&lt; <span class="string">": "</span> &lt;&lt; x &lt;&lt; endl</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> __gnu_pbds;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN = <span class="number">1e6</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> n, m, a[MAXN], cnt;</span><br><span class="line">tree&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;, null_type, less&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt;, rb_tree_tag, tree_order_statistics_node_update&gt; tr[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> lsx (2 * idx)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> rsx (2 * idx + 1)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> mid (l + r &gt;&gt; 1)</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Segtree</span></span><br><span class="line">{</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">build</span><span class="params">(<span class="type">int</span> l = <span class="number">1</span>, <span class="type">int</span> r = n, <span class="type">int</span> idx = <span class="number">1</span>)</span> </span>{</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = l; i &lt;= r; i++) tr[idx].<span class="built_in">insert</span>(<span class="built_in">make_pair</span>(a[i], ++cnt));</span><br><span class="line">        <span class="keyword">if</span> (l == r) <span class="keyword">return</span>;</span><br><span class="line">        <span class="built_in">build</span>(l, mid, lsx);</span><br><span class="line">        <span class="built_in">build</span>(mid + <span class="number">1</span>, r, rsx);</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">order_of_key</span><span class="params">(<span class="type">int</span> ql, <span class="type">int</span> qr, <span class="type">int</span> key, <span class="type">int</span> l = <span class="number">1</span>, <span class="type">int</span> r = n, <span class="type">int</span> idx = <span class="number">1</span>)</span> </span>{ <span class="comment">// find # elements &lt; key</span></span><br><span class="line">        <span class="keyword">if</span> (ql &gt; r || qr &lt; l) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span> (ql &lt;= l &amp;&amp; r &lt;= qr) <span class="keyword">return</span> tr[idx].<span class="built_in">order_of_key</span>(<span class="built_in">make_pair</span>(key, <span class="number">0ll</span>));</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">order_of_key</span>(ql, qr, key, l, mid, lsx) + <span class="built_in">order_of_key</span>(ql, qr, key, mid + <span class="number">1</span>, r, rsx);</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find_by_order</span><span class="params">(<span class="type">int</span> ql, <span class="type">int</span> qr, <span class="type">int</span> ord)</span> </span>{</span><br><span class="line">        <span class="type">int</span> l = <span class="number">0</span>, r = <span class="number">1e8</span>, ans = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">while</span> (l &lt;= r) {</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">order_of_key</span>(ql, qr, mid) + <span class="number">1</span> &lt;= ord) ans = mid, l = mid + <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> r = mid - <span class="number">1</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">change</span><span class="params">(<span class="type">int</span> qidx, <span class="type">int</span> orig, <span class="type">int</span> val, <span class="type">int</span> l = <span class="number">1</span>, <span class="type">int</span> r = n, <span class="type">int</span> idx = <span class="number">1</span>)</span> </span>{</span><br><span class="line">        tr[idx].<span class="built_in">erase</span>(tr[idx].<span class="built_in">lower_bound</span>(<span class="built_in">make_pair</span>(orig, <span class="number">0</span>)));</span><br><span class="line">        tr[idx].<span class="built_in">insert</span>(<span class="built_in">make_pair</span>(val, ++cnt));</span><br><span class="line">        <span class="keyword">if</span> (l == r) <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">if</span> (qidx &lt;= mid) <span class="built_in">change</span>(qidx, orig, val, l, mid, lsx);</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">change</span>(qidx, orig, val, mid + <span class="number">1</span>, r, rsx);</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">pre</span><span class="params">(<span class="type">int</span> ql, <span class="type">int</span> qr, <span class="type">int</span> key, <span class="type">int</span> l = <span class="number">1</span>, <span class="type">int</span> r = n, <span class="type">int</span> idx = <span class="number">1</span>)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span> (ql &gt; r || qr &lt; l) <span class="keyword">return</span> <span class="number">-2147483647</span>;</span><br><span class="line">        <span class="keyword">if</span> (ql &lt;= l &amp;&amp; r &lt;= qr) {</span><br><span class="line">            <span class="keyword">auto</span> it = tr[idx].<span class="built_in">lower_bound</span>(<span class="built_in">make_pair</span>(key, <span class="number">0</span>));</span><br><span class="line">            <span class="keyword">if</span> (it == tr[idx].<span class="built_in">begin</span>()) <span class="keyword">return</span> <span class="number">-2147483647</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="built_in">return</span> (--it)-&gt;first;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(<span class="built_in">pre</span>(ql, qr, key, l, mid, lsx), <span class="built_in">pre</span>(ql, qr, key, mid + <span class="number">1</span>, r, rsx));</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">suf</span><span class="params">(<span class="type">int</span> ql, <span class="type">int</span> qr, <span class="type">int</span> key, <span class="type">int</span> l = <span class="number">1</span>, <span class="type">int</span> r = n, <span class="type">int</span> idx = <span class="number">1</span>)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span> (ql &gt; r || qr &lt; l) <span class="keyword">return</span> <span class="number">2147483647</span>;</span><br><span class="line">        <span class="keyword">if</span> (ql &lt;= l &amp;&amp; r &lt;= qr) {</span><br><span class="line">            <span class="keyword">auto</span> it = tr[idx].<span class="built_in">lower_bound</span>(<span class="built_in">make_pair</span>(key + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line">            <span class="keyword">if</span> (it == tr[idx].<span class="built_in">end</span>()) <span class="keyword">return</span> <span class="number">2147483647</span>;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">return</span> it-&gt;first;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">min</span>(<span class="built_in">suf</span>(ql, qr, key, l, mid, lsx), <span class="built_in">suf</span>(ql, qr, key, mid + <span class="number">1</span>, r, rsx));</span><br><span class="line">    }</span><br><span class="line">} sgt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) cin &gt;&gt; a[i];</span><br><span class="line">    sgt.<span class="built_in">build</span>();</span><br><span class="line">    <span class="keyword">while</span> (m--) {</span><br><span class="line">        <span class="type">int</span> opt, l, r, pos, k; cin &gt;&gt; opt;</span><br><span class="line">        <span class="keyword">if</span> (opt != <span class="number">3</span>) cin &gt;&gt; l &gt;&gt; r &gt;&gt; k;</span><br><span class="line">        <span class="keyword">else</span> cin &gt;&gt; pos &gt;&gt; k;</span><br><span class="line">        <span class="keyword">if</span> (opt == <span class="number">1</span>) cout &lt;&lt; sgt.<span class="built_in">order_of_key</span>(l, r, k) + <span class="number">1</span> &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (opt == <span class="number">2</span>) cout &lt;&lt; sgt.<span class="built_in">find_by_order</span>(l, r, k) &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (opt == <span class="number">3</span>) sgt.<span class="built_in">change</span>(pos, a[pos], k), a[pos] = k;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (opt == <span class="number">4</span>) cout &lt;&lt; sgt.<span class="built_in">pre</span>(l, r, k) &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (opt == <span class="number">5</span>) cout &lt;&lt; sgt.<span class="built_in">suf</span>(l, r, k) &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+            <div itemprop="articleBody"><p>Every month starting from June, I will choose one very interesting problem and write a note (subtasks, thinking process, solution, etc) on this problem.</p>
+<p>ty benson1029 for suggesting this idea :)</p>
+<h1 id="May"><a href="#May" class="headerlink" title="May"></a>May</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>I’m not gonna post TFT problems ig, although they’re quite interesting.</p>
+<p>Although I first decided to start from June, I just came across a very non-standard graph construction problem and decided to put it in May, although it probably does not qualify as “a good OI problem”. The problems in the next few months will be even more interesting.</p>
+<h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Source: Adapted from 2026 Guangdong Mathematical Olympiad Provincial Selection Test Preliminary Test Section Two Problem Two (aka 2026 GDMO Prelim S2 P2)</p>
+<p>Problem: Construct a sub-tournament graph with 100 nodes, such that in every K4-subgraph, there exists a loop of length 3.</p>
+<ul>
+<li>sub-tournament graph: A directed graph with at most one edge between every two nodes.</li>
+<li>K4-subgraph: A subgraph with 4 nodes such that there is exactly one edge between every two nodes.</li>
+<li>loop of length 3: such as a-&gt;b-&gt;c-&gt;a.</li>
+</ul>
+<p>Your score depends on the number of edges in your graph:</p>
+<ul>
+<li>2500: 25pts</li>
+<li>3750: 50pts</li>
+<li>4000: 75pts</li>
+<li>4285: 100pts</li>
+</ul>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I thought about this problem for 2 hours, but only got 75pts. If it were in an MO exam (which is where the problem came from), I would’ve gotten 0 points out of 40 points, since the original problem asked for the maximum possible edge number, and I would never have guessed the number 4285.</p>
+<p>The hard part is to notice that the maximum number of edges is actually very close to 4950.</p>
+<p>Denote K[i] as any directed tournament graph with i nodes that satisfies the constraints.</p>
+<ul>
+<li>25 pts solution: Construct a bipartite graph with each side having 50 nodes. Basically, a K2 graph with each K2 node representing 50 nodes, and no edges connecting the nodes in between.</li>
+</ul>
+<p>The adjacency matrix of K2 (obviously):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0 1</span><br><span class="line">0 0</span><br></pre></td></tr></table></figure>
+<ul>
+<li>50 pts solution: Construct a K4 graph with each K4 node representing 25 nodes, and no edges connecting the nodes in between.</li>
+</ul>
+<p>The adjacency matrix of the K4 graph:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">0 1 0 0</span><br><span class="line">0 0 1 0</span><br><span class="line">1 0 0 1</span><br><span class="line">1 1 0 0</span><br></pre></td></tr></table></figure>
+<ul>
+<li>75 pts solution: Construct a K5 graph with each K5 node representing 20 nodes, and no edges connecting the nodes in between.</li>
+</ul>
+<p>The adjacency matrix of the K5 graph (it is actually just a star + loop):</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">0 1 1 0 0</span><br><span class="line">0 0 1 1 0</span><br><span class="line">0 0 0 1 1</span><br><span class="line">1 0 0 0 1</span><br><span class="line">1 1 0 0 0</span><br></pre></td></tr></table></figure>
+<ul>
+<li>100 pts solution: Construct a K7 graph with each K7 node representing 15, 15, 14, 14, 14, 14, 14 nodes, and no edges connecting the nodes in between.</li>
+</ul>
+<p>The adjacency matrix of the K7 graph (it is actually just a x-&gt;x+1, x-&gt;x+2, x-&gt;x+4):</p>
+<p>It’s in fact very easy to prove that this graph satisfies the conditions.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0 1 1 0 1 0 0</span><br><span class="line">0 0 1 1 0 1 0</span><br><span class="line">0 0 0 1 1 0 1</span><br><span class="line">1 0 0 0 1 1 0</span><br><span class="line">0 1 0 0 0 1 1</span><br><span class="line">1 0 1 0 0 0 1</span><br><span class="line">1 1 0 1 0 0 0</span><br></pre></td></tr></table></figure>
+<p>Total: 15*15+14*14*10+15*14*10=4285</p>
+<h2 id="Extra"><a href="#Extra" class="headerlink" title="Extra"></a>Extra</h2><p>How to prove that 4285 is the maximum?</p>
+<p>First, let’s prove that there cannot exist K[8].</p>
+<p>If there exists K8, then there must be a node with at least 4 out edges. Let’s say it is X-&gt;A, X-&gt;B, X-&gt;C, X-&gt;D. Considering XABC, by the condition, ABC forms a cycle, WLOG A-&gt;B, B-&gt;C, C-&gt;A. Considering XABD, we must have B-&gt;D, D-&gt;A. Considering XACD, we have a contradiction because there can’t exist a cycle of length 3.</p>
+<p>Then, by Turan’s theorem, the maximum graph without K8 has edges T(n, k)=floor((k-1)/2k*n^2)=4285.</p>
+<p>One can prove Turan’s theorem by using the adjustment method (in this case, called Zykov Symmetrization) or just induction. See <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem">Turan’s Theorem</a>.</p>
+<p>So the answer is 4285.</p>
+</div>
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -332,7 +376,7 @@ mjx-container[display="true"] + br {
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://1234567890regis.github.io/2025/12/27/Tree-Of-Treaps/",
+                text: "https://1234567890regis.github.io/2026/05/31/Monthly-Problem-Notes/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -344,14 +388,9 @@ mjx-container[display="true"] + br {
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://1234567890regis.github.io/2025/12/27/Tree-Of-Treaps/";
-            const title         = "「Tree-Of-Treaps」";
-            const excerpt       = `树套树这么好写？？？再也不写主席树啦！
-感觉树套树除了带了  个 log 以外完全没有问题啊。
-代码只比线段树板子多了几行。。。
-板子
-AC Code:
-1234567891011121314151617181920212223242...`;
+            const hostUrl       = "https://1234567890regis.github.io/2026/05/31/Monthly-Problem-Notes/";
+            const title         = "「Monthly-Problem-Notes」";
+            const excerpt       = `Every month starting from June, I will choose one very interesting problem and write a note (subtasks, thinking proce...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -373,7 +412,7 @@ AC Code:
                     
                 </div>
                 <div class="pull-date">
-                    <time datetime="2026-06-01T12:20:25.916Z" itemprop="dateModified">最后编辑：2026-06-01</time>
+                    <time datetime="2026-06-01T12:30:30.408Z" itemprop="dateModified">最后编辑：2026-06-01</time>
                 </div>
             </div>
         </footer>
@@ -382,13 +421,9 @@ AC Code:
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" Geometry2" href="/2025/10/08/Geometry2/">&lt; 上一篇</a>
+                <a title=" Dynamic-DP" href="/2026/05/09/Dynamic-DP/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" Dinic" href="/2025/12/29/Dinic/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
