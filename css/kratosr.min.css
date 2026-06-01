@@ -36,8 +36,8 @@ html {
 	height:100%
 }
 ::-webkit-scrollbar {
-	height:8px;
-	width:8px
+	height:12px;
+	width:12px
 }
 ::-webkit-scrollbar-thumb {
 	background:hsla(0,0%,80%,.533);
