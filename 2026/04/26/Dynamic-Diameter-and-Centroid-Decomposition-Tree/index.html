@@ -17,16 +17,16 @@
   
     <meta name="keywords" content="Algorithms, OI" />
   
-  <meta name="description" content="动态直径记模拟赛，又被直径创飞了。  以下的题目都可以用点分树或 LCT 解决，但蒟蒻不会 LCT，点分树解法放后面。  常用做法大集：  点分树 LCT 线段树维护神秘东西 线段树分治 重链剖分 动态 dp  P1Problem: CEOI 2019 Dynamic Diameter 题意：给定一棵树，维护：  动态修改边权 查询直径长度  强制在线。 Solution: 考虑欧拉序。记  为入">
+  <meta name="description" content="My thoughts on the Dynamic Diameter problem and using Centroid Decomposition Tree to overkill various problems.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dynamic Diameter and Centroid Decomposition Tree">
 <meta property="og:url" content="https://1234567890regis.github.io/2026/04/26/Dynamic-Diameter-and-Centroid-Decomposition-Tree/index.html">
 <meta property="og:site_name" content="Regis&#39;s Blog">
-<meta property="og:description" content="动态直径记模拟赛，又被直径创飞了。  以下的题目都可以用点分树或 LCT 解决，但蒟蒻不会 LCT，点分树解法放后面。  常用做法大集：  点分树 LCT 线段树维护神秘东西 线段树分治 重链剖分 动态 dp  P1Problem: CEOI 2019 Dynamic Diameter 题意：给定一棵树，维护：  动态修改边权 查询直径长度  强制在线。 Solution: 考虑欧拉序。记  为入">
+<meta property="og:description" content="My thoughts on the Dynamic Diameter problem and using Centroid Decomposition Tree to overkill various problems.">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://1234567890regis.github.io/images/icon.ico">
 <meta property="article:published_time" content="2026-04-25T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-01T13:03:27.626Z">
+<meta property="article:modified_time" content="2026-06-02T02:14:17.918Z">
 <meta property="article:author" content="1234567890regis">
 <meta property="article:tag" content="Algorithms">
 <meta property="article:tag" content="OI">
@@ -253,7 +253,7 @@ mjx-container[display="true"] + br {
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~2.44K
+                            ~2.56K
                         
                         字
                     </li>
@@ -270,13 +270,15 @@ mjx-container[display="true"] + br {
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1780319007626"></time> 前。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1780366457918"></time> 前。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="动态直径记"><a href="#动态直径记" class="headerlink" title="动态直径记"></a>动态直径记</h1><p>模拟赛，又被直径创飞了。</p>
+            <div itemprop="articleBody"><p>My thoughts on the Dynamic Diameter problem and using Centroid Decomposition Tree to overkill various problems.</p>
+<span id="more"></span>
+<h1 id="动态直径记"><a href="#动态直径记" class="headerlink" title="动态直径记"></a>动态直径记</h1><p>模拟赛，又被直径创飞了。</p>
 <ul>
 <li>以下的题目都可以用点分树或 LCT 解决，但蒟蒻不会 LCT，点分树解法放后面。</li>
 </ul>
@@ -467,21 +469,7 @@ mjx-container[display="true"] + br {
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "https://1234567890regis.github.io/2026/04/26/Dynamic-Diameter-and-Centroid-Decomposition-Tree/";
             const title         = "「Dynamic Diameter and Centroid Decomposition Tree」";
-            const excerpt       = `动态直径记模拟赛，又被直径创飞了。
-
-以下的题目都可以用点分树或 LCT 解决，但蒟蒻不会 LCT，点分树解法放后面。
-
-常用做法大集：
-
-点分树
-LCT
-线段树维护神秘东西
-线段树分治
-重链剖分
-动态 dp
-
-P1Problem:
-...`;
+            const excerpt       = `My thoughts on the Dynamic Diameter problem and using Centroid Decomposition Tree to overkill various problems.`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -503,7 +491,7 @@ P1Problem:
                     <a class="tag-none-link" href="/tags/Algorithms/" rel="tag">Algorithms</a>, <a class="tag-none-link" href="/tags/OI/" rel="tag">OI</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2026-06-01T13:03:27.626Z" itemprop="dateModified">最后编辑：2026-06-01</time>
+                    <time datetime="2026-06-02T02:14:17.918Z" itemprop="dateModified">最后编辑：2026-06-02</time>
                 </div>
             </div>
         </footer>
