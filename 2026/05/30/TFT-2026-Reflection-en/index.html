@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="zh-CN,en">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/icon.ico">
+  
+  <title>TFT 2026 Reflection | Regis&#39;s Blog</title>
+  
+  <meta name="author" content="1234567890regis" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="OI, Reflection" />
+  
+  <meta name="description" content="My reflection on HKOI TFT 2026. Rank: 7, Points: 313, Performance: Extremely Good (Day 1) + Extremely Bad (Day 2)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TFT 2026 Reflection">
+<meta property="og:url" content="https://1234567890regis.github.io/2026/05/30/TFT-2026-Reflection-en/index.html">
+<meta property="og:site_name" content="Regis&#39;s Blog">
+<meta property="og:description" content="My reflection on HKOI TFT 2026. Rank: 7, Points: 313, Performance: Extremely Good (Day 1) + Extremely Bad (Day 2)">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1234567890regis.github.io/images/icon.ico">
+<meta property="article:published_time" content="2026-05-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-06-03T11:33:45.611Z">
+<meta property="article:author" content="1234567890regis">
+<meta property="article:tag" content="OI">
+<meta property="article:tag" content="Reflection">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1234567890regis.github.io/images/icon.ico">
+  
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+
+<meta name="generator" content="Hexo 8.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Regis&#39;s Blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2><div class="title_example" style="font-size: 80px;"><span style="font-size: 80px; margin-right:25px">Regis&#39;s</span> <span style="font-size: 80px;">Blog</span></div></h2> <br>
+                        <span>For Little Cuties UwU</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://1234567890regis.github.io/2026/05/30/TFT-2026-Reflection-en/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">TFT 2026 Reflection</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2026-05-29T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2026-05-30</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">1234567890regis</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~28.26K
+                        
+                        字
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span id="twikoo_visitors"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1780486425611"></time> 前。</p></div>
+            </div>
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p>My reflection on HKOI TFT 2026. Rank: 7, Points: 313, Performance: Extremely Good (Day 1) + Extremely Bad (Day 2)</p>
+<span id="more"></span>
+<h1 id="IOI-NOI-TFT-2026-Reflection"><a href="#IOI-NOI-TFT-2026-Reflection" class="headerlink" title="IOI/NOI TFT 2026 Reflection"></a>IOI/NOI TFT 2026 Reflection</h1><h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>This year’s results, I guess everybody knows…</p>
+<ul>
+<li>Rank: 7</li>
+<li>Points: 313</li>
+<li>Performance: Nice (Day 1, best performance ever) + Extremely Bad (Day 2, worst performance ever)</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:right">No.</th>
+<th style="text-align:right">—- Estimated Difficulty</th>
+<th style="text-align:right">—- Expected</th>
+<th style="text-align:right">—- Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right">NOI/NOI+/CTSC</td>
+<td style="text-align:right">48</td>
+<td style="text-align:right">48</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right">提高+/省选-</td>
+<td style="text-align:right">100</td>
+<td style="text-align:right">100</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right">NOI/NOI+/CTSC</td>
+<td style="text-align:right">32</td>
+<td style="text-align:right">21</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">NOI/NOI+/CTSC</td>
+<td style="text-align:right">59</td>
+<td style="text-align:right">59</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right">省选/NOI-</td>
+<td style="text-align:right">100</td>
+<td style="text-align:right"><strong>25</strong></td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right">NOI/NOI+/CTSC</td>
+<td style="text-align:right">74</td>
+<td style="text-align:right">60</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/j9yce1wp.png" width="1280" height="676"></p>
+<h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>In total, I spent about 200+ hours preparing TFT, which is considerably a lot. And I have improved, a lot!</p>
+<p>It all started when I learned that I would not be eligible for this year’s IMO training because I didn’t attend the 2025 Prelim. Of course, before that, I still routinely did OI problems, but I was much more serious after that.</p>
+<p>Here are some of my preparation pictures, and a gallery of solved problems during my TFT preparation period (starting from 2026/1/1):</p>
+<ul>
+<li>Luogu: 98 problems</li>
+</ul>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/v7sjzt9a.png" alt=""></p>
+<ul>
+<li>Codeforces: 104 problems</li>
+</ul>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/79f6170y.png" alt=""></p>
+<ul>
+<li>HKOJ: 162 problems</li>
+</ul>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/1mz50sy4.png" width="920" height="416"></p>
+<p><img src="" alt=""></p>
+<ul>
+<li>PCOJ: 21 problems</li>
+</ul>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/47abfgal.png" width="825" height="523"></p>
+<ul>
+<li><strong>Total (excluding other small OJs): 385 problems</strong></li>
+</ul>
+<h2 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy"></a>Strategy</h2><p>At Thursday’s training, Soso told me to carefully think about my strategy. And I did, I wrote it down as follows:</p>
+<p><strong>TFT Strategy:</strong></p>
+<p>5h/3p = 1h40mins / problem</p>
+<ul>
+<li><p>先看题，认真看完，排序（<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.312ex;" xmlns="http://www.w3.org/2000/svg" width="4.651ex" height="1.819ex" role="img" focusable="false" viewBox="0 -666 2055.8 804"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g data-mml-node="mn" transform="translate(1055.8,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> mins）。</p>
+</li>
+<li><p>每道题先分配 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟时间想 observation, idea。如果会了就写代码。如果不会就先跳题。</p>
+</li>
+<li><p>优先 batch。如果（剩下的）batch 不是很可做，则先做 non-batch 水分。</p>
+</li>
+<li><p>如果调代码 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> mins 调不出来，重构。</p>
+</li>
+<li><p>保持清醒。</p>
+</li>
+</ul>
+<p>Of course, the strategy should change throughout the competition. But on both days, I mostly kept using this strategy.</p>
+<h2 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h2><h3 id="Saturday"><a href="#Saturday" class="headerlink" title="Saturday"></a>Saturday</h3><ul>
+<li>9:00-12:00 IMO Prelim 2026</li>
+</ul>
+<p>I only spent 3 hours preparing for the Prelim (by doing the 2025 Prelim as a mock test), because I know it is not hard. In fact, I think Prelim is more like a calculation competition than a math competition to me. In the end, of course, I got 25 points, which is a nice score.</p>
+<p>I won’t talk too much about it, but my strategy for Prelim was simple: beat the timer. This means that score(t)/t is greater than 30 pts / 180 mins for most of the competition. I completed my goal.</p>
+<p>In the last 30 minutes, I decided not to do any more Prelim problems and instead start rechecking my answers, since I knew that 25 points is more than sufficient, and also to mentally prepare for the afternoon’s TFT. In the end, I corrected 1 problem and finished the competition.</p>
+<p>I then took a taxi to CityU and ate some stuff.</p>
+<h3 id="TFT-Day-1"><a href="#TFT-Day-1" class="headerlink" title="TFT Day 1"></a>TFT Day 1</h3><p><strong>My Subtask Scoring:</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/a6t5uv0s.png" width="960" height="96"></p>
+<p><strong>My Submissions:</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/lf69fz1k.png" width="960" height="522"></p>
+<ul>
+<li>0:00-0:20 mins: Read problems, try sort difficulty</li>
+</ul>
+<p>I quickly read all the problems. The first one is an interactive problem, and I don’t have any ideas at first sight. The second is obviously a DP with transition f(i)=min(f(j)+w(i, j)), which reminds me of D&amp;C DP. The third is a very weird batch problem that I only thought of an O(n^8) solution at first sight.</p>
+<p>At this time, I’m already pretty sure that the second problem is easiest (mostly because of its simple structure), so I decided to spend time on P2.</p>
+<ul>
+<li>0:20-0:45 mins: Write P2 75pts</li>
+</ul>
+<p>I first start with O(n^2) to verify my DP’s correctness. I got the DP transition wrong at first, but after 10 minutes of debugging, I got the correct transition formula and submitted. 64pts.</p>
+<p>Taking a look at the transition formula, I realize that it is just some linear combination, so I can easily use CHT to optimize it. However, since the rest of the solution was only worth 25pts, I decided not to write it first and instead tried to “maximize my score” by trying other problems first.</p>
+<p>I first wrote an easy 11pts to get 75pts total in P2. Since my strategy is to try batch problems first, I decided to go on to P3.</p>
+<ul>
+<li>0:45-1:10 mins: Think P3</li>
+</ul>
+<p>After reading the problem, I still didn’t have any thoughts. I proceeded to write an O(n^8) brute force to make sure I understood everything correctly. Get 4pts.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">calc</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y, <span class="type">int</span> u, <span class="type">int</span> v)</span> </span>{ <span class="keyword">return</span> <span class="built_in">abs</span>(u - x) + <span class="built_in">abs</span>(y - v); }</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">minimum_time</span><span class="params">(<span class="type">int</span> R, <span class="type">int</span> C)</span> </span>{</span><br><span class="line">	vector&lt;string&gt; strs = { <span class="string">"sct"</span>, <span class="string">"stc"</span>, <span class="string">"tsc"</span>, <span class="string">"tcs"</span>, <span class="string">"cst"</span>, <span class="string">"cts"</span> };</span><br><span class="line">	<span class="type">int</span> ans = inf;</span><br><span class="line">	<span class="keyword">for</span> (string str : strs)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">auto</span> [x1, y1] : <span class="built_in">get</span>(str[<span class="number">0</span>]))</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">auto</span> [x2, y2] : <span class="built_in">get</span>(str[<span class="number">1</span>]))</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">auto</span> [x3, y3] : <span class="built_in">get</span>(str[<span class="number">2</span>]))</span><br><span class="line">					ans = <span class="built_in">min</span>(ans, <span class="built_in">calc</span>(R, C, x1, y1) + <span class="built_in">calc</span>(x1, y1, x2, y2) + <span class="built_in">calc</span>(x2, y2, x3, y3) + <span class="built_in">calc</span>(x3, y3, R, C));</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>After thinking for some minutes, I think that the full solution is literally impossible. So I skipped this problem.</p>
+<ul>
+<li>1:10-1:30 mins: Think P1</li>
+</ul>
+<p>By looking at subtasks, I quickly realized that this problem is a two-step interactive problem: find a specific pattern, and then use this pattern to quickly find information.</p>
+<p>So I start thinking about how to find the patterns (“rainbow” and “big blob”). After thinking for some time, I realize that this is still very hard. So I decided to AC P2 first.</p>
+<ul>
+<li>1:30-1:40 mins: AC P2</li>
+</ul>
+<p>I quickly wrote a convex hull and ACed. It is not even long:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">line</span> {</span><br><span class="line">	<span class="type">int</span> k, b;</span><br><span class="line">	<span class="function"><span class="type">int</span> <span class="title">operator</span><span class="params">()</span> <span class="params">(<span class="type">int</span> x)</span> </span>{ <span class="keyword">return</span> k * x + b; }</span><br><span class="line">};</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">double</span> <span class="title">interx</span><span class="params">(line u, line v)</span> </span>{ <span class="keyword">return</span> (u.b - v.b) / <span class="number">1.0</span> / (v.k - u.k); }</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">hull</span> {</span><br><span class="line">	deque&lt;line&gt; q;</span><br><span class="line">	<span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(line l)</span> </span>{ <span class="keyword">while</span> (q.<span class="built_in">size</span>() &gt;= <span class="number">2</span> &amp;&amp; <span class="built_in">interx</span>(l, q[<span class="number">0</span>]) &gt; <span class="built_in">interx</span>(q[<span class="number">0</span>], q[<span class="number">1</span>])) q.<span class="built_in">pop_front</span>(); q.<span class="built_in">push_front</span>(l); }</span><br><span class="line">	<span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>{ <span class="keyword">while</span> (q.<span class="built_in">size</span>() &gt;= <span class="number">2</span> &amp;&amp; q[q.<span class="built_in">size</span>() - <span class="number">2</span>](x) &lt;= q.<span class="built_in">back</span>()(x)) q.<span class="built_in">pop_back</span>(); <span class="keyword">return</span> q.<span class="built_in">back</span>()(x); }</span><br><span class="line">} h1, h2;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1:40-2:30 mins: Think P1</li>
+</ul>
+<p>I decided to spend time on P1 because the P3 batch seems undoable. I started by doing Subtask 1, which is very easy. I used 7 mins to get Subtask 1 AC.</p>
+<p>Then I started doing Subtask 2 and 4. I quickly realize that I can do it by using binary search. I used another 11 mins to get Subtask 2 AC and Subtask 4 18pts.</p>
+<p>Then I started doing Subtask 3 or the full solution. I’m sure that I needed to find either a “rainbow” or a “big blob” first. I first started exploring the possibilities of the query, which are things I can do.</p>
+<p>I found that I can do the following:</p>
+<ul>
+<li>Given a “big blob”, a set S, and a color x, determine whether x is in S or not. This is by querying (S+x+stuff from big blob) and (S + stuff from big blob) and seeing if anything changes.</li>
+</ul>
+<p>However, I don’t see anything that can be done with this operation.</p>
+<p>After another while of thinking, I found another thing I can do with the query:</p>
+<ul>
+<li>Given any n - 1 squares, find all squares that do not share the same color as any of these n - 1 squares. This is by replacing the first square with all n^2 other squares, and seeing if it is equal to the minimum.</li>
+</ul>
+<p>I thought that this operation was very useful, and then tried to quickly construct a “rainbow” set. However, there were a lot of corner cases, and I failed.</p>
+<p>I decided to skip P1 first and try doing P3.</p>
+<ul>
+<li>2:45-3:25 mins: Think P3</li>
+</ul>
+<p>Firstly, I spent 5 mins to AC Subtask 1. Then I tried making observations and ideas.</p>
+<p>After further thinking, I notice that the path x-&gt;a-&gt;b-&gt;c can be split into two distinct paths x-&gt;a-&gt;b and x-&gt;c-&gt;b, thus bringing the complexity down to O(n^6). Sadly, this doesn’t get any more points.</p>
+<p>However, I realize that after enumerating b, the grid can be split into 9 parts according to the position of x and b. I just need to query the minimum contribution of a and c in these 9 parts, and then take the minimum. However, this is a 2-D node counting problem and needs 27 2-D Sparse Tables or 27 2-D BITs or something, which is absolutely undoable. But this brings the complexity down to O(n^4) (with huge constant), which only gets 14pts. It is obviously not worth the time.</p>
+<p>Since the full solution must be O(n^2) and I couldn’t think of a solution that does not enumerate b, I think that the full solution must be O(1) query and some weird initialization and covering. But still, I have to enumerate b, which is already O(n^2). I don’t understand how an O(n^2) solution is possible, so I decided to skip and do P1 again.</p>
+<ul>
+<li>3:25-4:00 mins: Continue thinking P1</li>
+</ul>
+<p>After a lot of thinking, I found a very mysterious solution that finds a rainbow set in 4n^2 queries.</p>
+<p>Still, I don’t know how to use a rainbow set. Maybe it isn’t even useful, since the subtasks indicate that a “big blob” might be more useful instead.</p>
+<p>I tried thinking about a full solution. I found that it is implausible to quickly determine many squares at once, so the full solution must be about 2.7 queries per square. After thinking about what information I haven’t used, I realized I must make use of the value itself instead of simply comparing two return values.</p>
+<p>But to make use of the value, I must query something like 1, 2, 2, 3, 3, 3, …, sqrt(N), …, sqrt(N), but this only covers sqrt(N) values. Now I have to query sqrt(N) times per square, which is even worse than log(N). I have no further ideas, so I discarded this idea.</p>
+<p>After more thinking, I came up with an extremely mysterious randomized solution, which I thought could run in O(cn^2 log n), but after I implemented it, it turned out to be fake.</p>
+<p>Seeing that not much time is left, I decided to do P3 again.</p>
+<ul>
+<li>4:00-4:15 mins: Try P3 with Cuts</li>
+</ul>
+<p>At this time, I was already desperate. I only had 33+100+7=140pts. Only 1 hour left. What should I do?</p>
+<p>I first added the memoization and some cuts to the O(n^8) solution. Then I changed it to O(n^6). Still 7 pts. Oh no.</p>
+<ul>
+<li>4:15-4:30 mins: AC P1 Subtask 3</li>
+</ul>
+<p>After switching back to P1, I suddenly realized that there exists a no-brainer n^3 solution to find a “rainbow”. Adding the n^3 brute-force, I came up with a solution that ACed P1 Subtask 3.</p>
+<ul>
+<li>4:30-4:43 mins: AC P3 Subtask 3</li>
+</ul>
+<p>I then decided to switch back to P3. Desperately, I decided to sort a, b, c based on their distance to x, and only take the first 50. This makes O(50*n^4). To my surprise, it actually passed Subtask 3!!!</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">minimum_time</span><span class="params">(<span class="type">int</span> R, <span class="type">int</span> C)</span> </span>{</span><br><span class="line">	<span class="keyword">if</span> (Ans[R][C]) <span class="keyword">return</span> Ans[R][C];</span><br><span class="line">	vector&lt;string&gt; strs = { <span class="string">"sct"</span>, <span class="string">"stc"</span>, <span class="string">"tsc"</span>, <span class="string">"tcs"</span>, <span class="string">"cst"</span>, <span class="string">"cts"</span> };</span><br><span class="line">	<span class="type">int</span> ans = inf;</span><br><span class="line">	<span class="built_in">sort</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>(), [&amp;](pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; u, pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; v) { <span class="keyword">return</span> <span class="built_in">calc</span>(u.first, u.second, R, C) &lt; <span class="built_in">calc</span>(v.first, v.second, R, C); });</span><br><span class="line">	<span class="built_in">sort</span>(c.<span class="built_in">begin</span>(), c.<span class="built_in">end</span>(), [&amp;](pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; u, pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; v) { <span class="keyword">return</span> <span class="built_in">calc</span>(u.first, u.second, R, C) &lt; <span class="built_in">calc</span>(v.first, v.second, R, C); });</span><br><span class="line">	<span class="built_in">sort</span>(t.<span class="built_in">begin</span>(), t.<span class="built_in">end</span>(), [&amp;](pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; u, pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; v) { <span class="keyword">return</span> <span class="built_in">calc</span>(u.first, u.second, R, C) &lt; <span class="built_in">calc</span>(v.first, v.second, R, C); });</span><br><span class="line">	<span class="keyword">for</span> (string str : strs) {</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="built_in">min</span>(<span class="number">50</span>, (<span class="type">int</span>)<span class="built_in">get</span>(str[<span class="number">0</span>]).<span class="built_in">size</span>()); i++) {</span><br><span class="line">			<span class="keyword">auto</span> [x1, y1] = <span class="built_in">get</span>(str[<span class="number">0</span>])[i];</span><br><span class="line">			<span class="keyword">if</span> (<span class="number">2</span> * <span class="built_in">calc</span>(R, C, x1, y1) &lt; ans) {</span><br><span class="line">				<span class="type">int</span> mn1 = inf, mn2 = inf;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">auto</span> [x2, y2] : <span class="built_in">get</span>(str[<span class="number">1</span>])) mn1 = <span class="built_in">min</span>(mn1, <span class="built_in">calc</span>(R, C, x2, y2) + <span class="built_in">calc</span>(x2, y2, x1, y1));</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">auto</span> [x2, y2] : <span class="built_in">get</span>(str[<span class="number">2</span>])) mn2 = <span class="built_in">min</span>(mn2, <span class="built_in">calc</span>(R, C, x2, y2) + <span class="built_in">calc</span>(x2, y2, x1, y1));</span><br><span class="line">				ans = <span class="built_in">min</span>(ans, mn1 + mn2);</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> Ans[R][C] = ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<ul>
+<li>4:43-5:00 mins: Spam judge</li>
+</ul>
+<p>Feeling clutch, I decided to test my luck and adjust parameters like 50 and more weird stuff. But unfortunately, I did not pass Subtask 4 (which would be kinda disrespectful for trainers too if passed lol).</p>
+<ul>
+<li>Competition End</li>
+</ul>
+<h3 id="Post-Competition"><a href="#Post-Competition" class="headerlink" title="Post-Competition"></a>Post-Competition</h3><p>I was extremely worried, thinking that I was doomed. In the competition, I saw Migration suddenly become very happy and instantly go to the toilet. I thought he ACed P1 (although this thought did not affect my strategy at all), but turns out he just ACed P2. After asking around for results, I found Adam 193 culver 155 carson 144 Migration 140. I feel very shocked - this was my highest rank in all HKOI competitions! And it occurred in TFT!</p>
+<p>The trainers announced all solutions in 1 nanoseconds (I didn’t listen carefully lol) and scoreboard release. Rank 3!!!</p>
+<p>(Although I believe myself to be Rank 2 if not for penalty time)</p>
+<p>However, this competition really didn’t distinguish the trainees a lot. The margins were small, and I knew that this was definitely not the end. But I did learn that I have the ability to get rank top 4, and I had more confidence in myself.</p>
+<p>Later, Soso told me to revise my strategies. Then, we went to the mall to eat some food. During the walk to the mall, 123abc showed me the Prelim answers that culver gave him right before TFT. 25pts! Nice, although it was much in my expectations. After eating, I went home with tanjianlang.</p>
+<p>I didn’t make any changes to my strategy and decided to compete in Day 2 as if I had no advantage.</p>
+<h3 id="Sunday"><a href="#Sunday" class="headerlink" title="Sunday"></a>Sunday</h3><p>I slept at 22:30 the night before and woke up at 07:30. After eating breakfast, I decided to revise some templates. Since yesterday’s problems didn’t have graph problems, I decided to revise HLD and all sorts of Connectivity. I quickly finished all those templates and didn’t do anything more.</p>
+<p>I ate some stuff and got a taxi to CityU.</p>
+<h3 id="TFT-Day-2"><a href="#TFT-Day-2" class="headerlink" title="TFT Day 2"></a>TFT Day 2</h3><p><strong>My Subtask Scoring:</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/6mgp8fki.png" width="960" height="93"></p>
+<p><strong>My Submissions:</strong></p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/ujfk6aj6.png" width="960" height="301"></p>
+<ul>
+<li>0:00-0:45 mins: Take a look at problems, sort difficulty, brief thinking</li>
+</ul>
+<p>It only took me 15 mins to read and understand all the problems. Then I started thinking.</p>
+<p>For P1, I quickly discovered that I can partition the edges into tight edges and loose edges, and I can binary search on the last new tight edge for every query. Then the change is basically making all edges tight, making at most one edge from tight to loose, and making no changes to anything else. This leads to a very simple amortized solution idea, since there is at most one edge from tight to loose, the total number of edges that went from loose to tight is O(n+q).</p>
+<p>For P2, I don’t have many ideas, but Subtask 1 is very doable. I quickly found a 25pts solution, and decided to skip for now.</p>
+<p>For P3, I literally instantly solved it within 5 minutes in my mind. Using what? It’s <del>very simple,</del> using <strong>Bitset + Virtual Tree + Matrix + Heavy Light Decomposition + Segment Tree + Dynamic DP</strong>. O(n^2/w+n log^2 n). Yeah. I ain’t writing that bruh.</p>
+<p>For those who are interested in my toxic solution, here it is. Offline the queries, and for every color, you get a virtual tree with O(c_i) nodes, where the sum of c_i is O(n). For the nodes that are not in the virtual tree, if it is controlled by Alice, it doesn’t matter; if it is controlled by Bob, then if it has more than one child, Bob wins instantly, and we can delete this node and its subtree. The deletion can be maintained by bitset, I guess. And if it has only one child, then it doesn’t matter.</p>
+<p>For each query, we split the query into 4 operations. Now each operation is <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4719">[Template] DDP</a> (aka Dynamic Dynamic Programming). We can use Matrix + HLD + Segment Tree to maintain it. Since the sum of sizes of virtual trees is only O(n), we have solved this problem in O(n^2/w+n log^2 n).</p>
+<p>Of course, I didn’t think that this was the intended solution anyway. But I decided that this was probably the hardest problem in the problem set, so I decided to do P1 first.</p>
+<ul>
+<li>0:45-1:20 mins: Try P1</li>
+</ul>
+<p>The first step was to maintain the position. After thinking, I realized that I need a segment tree. I quickly wrote DFS, binary lifting, LCA, and a segment tree to prepare for the query. I debugged a bit. I then wrote a brute-force based on my segment tree, maintaining the positions to see if it was correct. And it was. O(n^2 log n) 23pts.</p>
+<p>The rest is the contribution calculation, which is very complicated. After making some slight changes to my brute-force, I decided to skip it for now and do P2.</p>
+<ul>
+<li>1:20-1:50 mins: Try P2</li>
+</ul>
+<p>I decided to write a helper function that might also be useful for Subtask 2. The function’s purpose is to assign “identities” to each player, so I can always assume the smaller one loses to the bigger one and let the function do the rest. However, I keep getting WA on the samples, and after debugging it, I submit and get WA 0pts.</p>
+<p>I quickly realized that my function was wrong, since it also needs to swap the identities of players who competed with them. And it is extremely complicated to implement. So I decided to switch to P3 first.</p>
+<ul>
+<li>1:50-2:25 mins: Get P3 53pts</li>
+</ul>
+<p>I first wrote an O(nq) brute force that does Tree DP on every query. 30pts. I then see that Subtask 6 can be done with bitset. So I write that too. 53pts. Didn’t know why it took so long, maybe because of debugging.</p>
+<ul>
+<li>2:25-3:05 mins: Closer to P1 full</li>
+</ul>
+<p>Back to P1. I realize that I actually don’t need a segment tree, and instead, I can use a monotonic stack, which would be easier to manage in updating contributions.</p>
+<p>But after calculations on paper, I found that the contribution was much harder than I thought. The problem is that I need to find the total distance between nodes on a chain and a fixed point. And the chain has a distance of k between adjacent nodes, which made it even harder. I knew I had to find the projection, fix some corner cases, and do a lot of math. Based on my bad experience with case analysis, I decided to skip this problem for now.</p>
+<ul>
+<li>3:05-3:15 mins: Get P3 Subtask 2</li>
+</ul>
+<p>The subtask is just a star, so I ACed it and got 7pts. Total 60pts.</p>
+<ul>
+<li>3:15-3:45 mins: Hesitating and thinking between P1 and P2</li>
+</ul>
+<p>I tried to complete my P1 code, but as I was writing more and more, I realized that it was too risky for me to try to AC with the given time left. This was literally a waste of time, as I tried to implement the endless math functions and case analysis.</p>
+<p>So I started thinking P2. Since not much time is left, I first tried to aim for a full solution. My thinking was as follows (please do criticize me):</p>
+<p>Of course, I know how to find the top 1. But then I didn’t think that I could directly find the top 2 (maybe I thought it was O(n) for some reason). What I thought was different - I can use log n = 12 rounds, with the j-th round comparing (i, i+2^j mod n). Then I can now remove the ones that lost 8 rounds or more, and now the number of players has drastically decreased.</p>
+<p>However, this solution is very bad, so it doesn’t get any points. So I go back to P1.</p>
+<p>After making one quick submission on P1, I decided that the P1 full solution was impossible. So I decided that spending on P2 is probably better than wasting time on P1.</p>
+<ul>
+<li>3:45-4:00 mins: Get P2 25pts</li>
+</ul>
+<p>I got 25pts by hard-coding the competitions. But still, I wrote a helper function to make it easier. The code is as follows:</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">pair&lt;vector&lt;<span class="type">int</span>&gt;, vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">pr</span>(vector&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; matches) {</span><br><span class="line">	<span class="keyword">auto</span> it = <span class="built_in">play_round</span>(matches); vector&lt;<span class="type">int</span>&gt; it2;</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; matches.<span class="built_in">size</span>(); i++) <span class="keyword">if</span> (it[i] == matches[i].first) it<span class="number">2.</span><span class="built_in">push_back</span>(matches[i].second); <span class="keyword">else</span> it<span class="number">2.</span><span class="built_in">push_back</span>(matches[i].first);</span><br><span class="line">	<span class="keyword">return</span> {it, it2};</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">chess_tournament</span><span class="params">(<span class="type">int</span> N, <span class="type">int</span> R)</span> </span>{</span><br><span class="line">	<span class="keyword">auto</span> [a, b] = <span class="built_in">pr</span>({{<span class="number">0</span>, <span class="number">1</span>}, {<span class="number">2</span>, <span class="number">3</span>}, {<span class="number">4</span>, <span class="number">5</span>}, {<span class="number">6</span>, <span class="number">7</span>}});</span><br><span class="line">	<span class="keyword">auto</span> [c, d] = <span class="built_in">pr</span>({{a[<span class="number">0</span>], a[<span class="number">1</span>]}, {a[<span class="number">2</span>], a[<span class="number">3</span>]}, {b[<span class="number">0</span>], b[<span class="number">1</span>]}, {b[<span class="number">2</span>], b[<span class="number">3</span>]}});</span><br><span class="line">	<span class="keyword">auto</span> [e, f] = <span class="built_in">pr</span>({{c[<span class="number">0</span>], c[<span class="number">1</span>]}, {d[<span class="number">0</span>], d[<span class="number">1</span>]}, {c[<span class="number">2</span>], c[<span class="number">3</span>]}, {d[<span class="number">2</span>], d[<span class="number">3</span>]}});</span><br><span class="line">	<span class="type">int</span> win = e[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">auto</span> [g, h] = <span class="built_in">pr</span>({{f[<span class="number">0</span>], e[<span class="number">1</span>]}});</span><br><span class="line">	<span class="keyword">auto</span> [i, j] = <span class="built_in">pr</span>({{g[<span class="number">0</span>], e[<span class="number">2</span>]}});</span><br><span class="line">	<span class="type">int</span> scd = i[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">return</span> {win, scd};</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<ul>
+<li>4:00-4:15 mins: Get P1 Subtask 5, 6</li>
+</ul>
+<p>Feeling disastrous in my P1 performance, I decided to make one last try at subtasks. To my surprise, I suddenly realize that Subtasks 5 and 6 are very easy, given that I already know the positions. I added a simple arithmetic sequence sum and ACed Subtask 5, 6 in 5 mins.</p>
+<p>I then took a final look at P1 Subtask 4 and P3 Subtask 5, two subtasks that I completely skipped. But I do not have easy ideas I could write. At least, it wasn’t as worthy as P2. So I decided to <strong>all-in</strong> P2.</p>
+<ul>
+<li>4:15-5:00 mins: P2</li>
+</ul>
+<p><strong>This is where all goes wrong.</strong></p>
+<p>Instead of thinking about getting rank 1, then rank 2, etc., one by one, I thought about the idea another way. If I got the final result, then the 4088 people must have lost to 16 other people.</p>
+<p>I literally didn’t realize that A-&gt;B, B-&gt;C indicates A-&gt;C. That being said, I thought I should arrange the competitions in a way that every x must lose in 16 competitions.</p>
+<p>And the next step was straightforward for me. If I split the N contestants into N/32 groups and play 32 competitions within each group, then I can exactly eliminate half of the people, since they have lost 16 competitions. So now I get a polylog solution.</p>
+<p>I started implementing it for a while. But after checking the problem again, I realized that this solution needed 32*12=3864 competitions, which will obviously get me 0pts.</p>
+<p>There are fewer than 20 minutes now. And I could not think of a better solution. I was too deeply immersed in my chain of thought that I literally didn’t realize that finding the maximum one-by-one gives 96 competitions, which is 22.8pts (in reality, much more), which would be sufficient to get me into IOI.</p>
+<p>I spent the last few minutes trying to solve Subtask 1 30pts without avail.</p>
+<p>Competition end.</p>
+<h3 id="Post-TFT"><a href="#Post-TFT" class="headerlink" title="Post-TFT"></a>Post-TFT</h3><p>I already knew I was doomed because of my poor scoring in P5. The feeling worsened when I saw my neighbor WYK23X35 score 0+83.6+0. The feeling worsened again when Mr. Wong told me I scored the lowest in P5 among PCOI.</p>
+<p>Solution session. Wasn’t happy enough to listen carefully.</p>
+<p>After the solution session, I got a photo taken by ethening, and talked to others. It seems like culver didn’t want to participate in NOI, and a guy (rank 9 or 10, I guess) was extremely happy and thanked culver.</p>
+<p>Tosivan came to me and asked me if I was Regis. I said yes. He said that he must thank me for not putting effort into P5 (I did), or else he wouldn’t have had the chance to go to IOI. I sincerely wished him good luck in IOI.</p>
+<p>Soso told me that he got a 60+pts solution in P5 in 0 seconds. orz. He told me to write a clear reflection, so here it is :)</p>
+<h2 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h2><p>Obviously, the hardest TFT in the history of TFT.</p>
+<p>Extremely obvious from the scoreboard, the biggest mistake is not being able to score higher in P5 despite spending at least 1.5 hours on the problem.</p>
+<p>This time, it is not my strategy that failed, it is completely skill issue. Before the competition, I would have never believed that there exists a problem that I spent 1h 30 mins on and got rank 56 among the 80 contestants. But it’s true, and unfortunately, this problem appeared in TFT.</p>
+<p>What have I learnt from this TFT? I guess I have learnt some really important lessons:</p>
+<ul>
+<li>Do not immerse too deeply in one thought.</li>
+</ul>
+<p>Really strong OIers have a hundred different thoughts when it comes to these interactive problems, but I usually only have fewer than 2 thoughts.</p>
+<p>If it was not because I only had 1 hour left, normally I would’ve gone to the toilet. But I didn’t because it usually takes a while for the trainers to approve your toilet request, and you would have even less time left.</p>
+<p>From samples from various competitions, I have made this mistake a lot before, just to name a few:</p>
+<ol>
+<li><p>In the 2025 Guangdong MO provincial selection, I spent one hour out of 3.5 hours trying to prove a false statement in a geometry problem.</p>
+</li>
+<li><p>In 2026 HKOI Junior, I spent 90 minutes on P4 without realizing that there was a better implementation.</p>
+</li>
+<li><p>In 2026 CSP Senior, I debugged my code for 2 hours without avail. The reason is that I didn’t check my array declaration.</p>
+</li>
+<li><p>In 2026 APIO, I didn’t even read P3 because I thought it was hard. Of course, it turned out to be the easiest problem in the problem set.</p>
+</li>
+<li><p>2026/5/24 TFT Day 2 P2. I would never forget this problem.</p>
+</li>
+</ol>
+<ul>
+<li>Order the problems wisely.</li>
+</ul>
+<p>A really important lesson I learnt from this TFT. For example:</p>
+<p>Both Animal Migration and tosivan found the crucial D1P3 observation and dumped lots of time and energy on this problem. Turns out that this problem was the hardest in the problem set. On the other hand, I did not find the crucial observation, and so I didn’t spend time on D1P3.</p>
+<p>What does that mean? In terms of ability, my observation skills failed on P3, but I got higher marks in total on Day 1. That is luck. But if I made more observations in P3, would I have spent more time on P3? Probably yes. Would I get more marks in total? Probably no, maybe even less.</p>
+<p>What I mean is that, maybe, the smartest decision on which problem to do should be based on comparing the expected scores for each problem, not wishful thinking.</p>
+<p>And now on Day 2, I made the same mistake. If I hadn’t spent about 1 hour wasting time on P1’s case analysis, I would have definitely achieved a high score in P2. But why did I spend so much time on P1? It was probably because of confidence in my tree abilities. And later, it was because of my unwillingness to only get 23pts when I wrote a near-full solution. The instant I saw 2 tree problems in the problem set, I told myself that I probably have the ability to AC at least one problem.</p>
+<ul>
+<li>Do not ignore non-batch problems. Spend more time on it.</li>
+</ul>
+<p>Unlike batch problems that can be easily trained to be good at, non-batch problems need lots of observation and ideas, even if they are not good or sufficient to solve the problem. And as I have said, I usually only have fewer than 2 ideas in interactive problems.</p>
+<p>I really need to do more non-batch problems. If TFT only had the four batch problems, you can find that I rank second in the leaderboard (because Adam trained even more than me on batch problems).</p>
+<p>Sometimes, a non-batch problem’s scores are correlated with the time spent on it. Such as both D1P1 and D2P2. It is really not a good strategy to not spend much time on non-batch problems.</p>
+<p><em>最後的最後，愿後來者，警鐘長鳴！</em> - tanjianlang</p>
+<h2 id="Afterwords"><a href="#Afterwords" class="headerlink" title="Afterwords"></a>Afterwords</h2><p>Should I be happy or sad?</p>
+<p>To be honest, I am more sad than happy about my results, mostly because I know that I definitely have the ability to go to NOI, since I never dropped out of the top 8 in Mini-Comps. Going to IOI is my dream, and I have a chance aiming at it, but I failed.</p>
+<p>Another important thing I am sad about is, of course, the PCOI streak. The reality is, it has reset.</p>
+<p>The 18-year streak for me is somewhat magical, a lot of exceptionally strong OIers have contributed to it. It feels somewhat sacred to me, and I feel the responsibility to keep it running. And this year, most of the responsibility of its resetting is undoubtedly on me, and I couldn’t bear this thought.</p>
+<p>But, on the other hand, could I have done anything extra to change the final result?</p>
+<p>Yes, maybe… by doing more non-batch tasks and stuff, and being smarter when doing P5 (but can’t say too many things after the results have been published). But overall, I have already given my best effort I could, spending time doing OI problems, and enjoying the process. What could I regret? After all, it is the process that makes it interesting, not necessarily the conclusion.</p>
+<p>Maybe, the PCOI streak reset is not necessarily a bad thing. It is now not a burden, but a reminiscent hope that future OIers would aim to recreate.</p>
+<p>Maybe, my ability is simply not dominantly strong enough like Adam, not to mention OI gods like gamegame, Mr. WongChun1234, benson1029, etc, so maybe a first-year NOI is already a good result for me.</p>
+<p>Also, I would like to express my thanks to Soso, ethening, Mr. Wong, benson1029, and firewater for being my role models, encouraging me, and giving me hope!</p>
+<p>At last, I would also like to wish some people good luck:</p>
+<ul>
+<li><p>to culver: to me, he is the god of MO, and an extremely decent competitor. Wish him good luck in IMO (gold), and farewell!</p>
+</li>
+<li><p>to onbert, Lo Ting Wai, tosivan, carson, hopeful, DoRaemon, tanjianlang: for onbert, Lo Ting Wai, tosivan, good luck in IOI! For onbert, tosivan, carson, hopeful, DoRaemon, tanjianlang, farewell, and good luck in university!</p>
+</li>
+<li><p>to hopeIess: very strong, orz, good luck in IOI + NOI!</p>
+</li>
+<li><p>to Animal Migration, HarryBob, Archso, YimChunHei, 123abc, and other juniors, including myself: we still have several years left, anything is possible in the future, good luck!</p>
+</li>
+<li><p>to all NOI contestants (including myself): good luck in NOI!</p>
+</li>
+<li><p>last but not least, to all PCOIers: continue the fight for next year! Never give up, keep doing problems, good luck!</p>
+</li>
+</ul>
+<p><em>I now have an advantage, because I have nothing to lose.</em> - 1234567890regis</p>
+<h2 id="Fun-Stuff"><a href="#Fun-Stuff" class="headerlink" title="Fun Stuff"></a>Fun Stuff</h2><p>When searching through my old files, I suddenly found an Excel file called “Teammates”. There, I listed some people whom I would like to be teammates with. Here is the content:</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/kpjhdd62.png" alt=""></p>
+<p>Pure coincidentally, the eight people listed in my file just happened to be the top 8 in TFT.</p>
+<h2 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h2><p>I think I will take a temporary break from OI and refresh my mind a bit, especially for the final exam. I will also start preparing for IMO training at the same time. But I will continue doing more OI problems, of course, especially non-batch.</p>
+<p><strong>My Goals:</strong> <em>hidden for now, will show if succeeded</em> but wish me luck!</p>
+<h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END"></a>THE END</h2></div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://1234567890regis.github.io/2026/05/30/TFT-2026-Reflection-en/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://1234567890regis.github.io/2026/05/30/TFT-2026-Reflection-en/";
+            const title         = "「TFT 2026 Reflection」";
+            const excerpt       = `My reflection on HKOI TFT 2026. Rank: 7, Points: 313, Performance: Extremely Good (Day 1) + Extremely Bad (Day 2)`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/OI/" rel="tag">OI</a>, <a class="tag-none-link" href="/tags/Reflection/" rel="tag">Reflection</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2026-06-03T11:33:45.611Z" itemprop="dateModified">最后编辑：2026-06-03</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" IMO Prelim 2026 Solution" href="/2026/05/25/IMO-Prelim-2026-Solution-en/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" TFT 2026 参赛总结与反思" href="/2026/05/30/TFT-2026-Reflection-zh/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://twikoo-blond-beta.vercel.app/', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/icon.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="site-meta" style="margin-top: 10px; margin-bottom: 10px;">
+        <a class="meta-item" href="/">
+            <span class="title" style="margin-bottom: 9px">
+                Home
+            </span>
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a class="meta-item" href="/profile">
+            <span class="title" style="margin-bottom: 9px">
+                Profile
+            </span>
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="meta-item" href="/search">
+            <span class="title" style="margin-bottom: 9px">
+                Search
+            </span>
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </a>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                40
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+    </div>
+</aside>
+
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/">MO</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Geometry/">Geometry</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/">OI</a><span class="category-list-count">35</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Reflection/">Reflection</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Training/">Training</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/%E7%AE%97%E6%B3%95/">算法</a><span class="category-list-count">1</span></li></ul></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/tags/Algorithms/" style="font-size: 0.74em;">Algorithms</a> <a href="/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/tags/MO/" style="font-size: 0.69em;">MO</a> <a href="/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/tags/Solutions/" style="font-size: 0.71em;">Solutions</a> <a href="/tags/Training/" style="font-size: 0.66em;">Training</a> <a href="/tags/%E7%AE%97%E6%B3%95/" style="font-size: 0.6em;">算法</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2026/05/31/Monthly-Problem-Notes-en/"><i class="fa  fa-book"></i> Monthly Problem Notes</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/05/30/TFT-2026-Reflection-zh/"><i class="fa  fa-book"></i> TFT 2026 参赛总结与反思</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/05/30/TFT-2026-Reflection-en/"><i class="fa  fa-book"></i> TFT 2026 Reflection</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/05/25/IMO-Prelim-2026-Solution-en/"><i class="fa  fa-book"></i> IMO Prelim 2026 Solution</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/05/22/JOI-2026-Training-zh/"><i class="fa  fa-book"></i> JOI 2026 Training</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div style="font-size: 15px">
+                            <li>&copy; 2026 Regis's Blog 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by 1234567890regis.</li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
