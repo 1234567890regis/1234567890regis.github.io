@@ -181,6 +181,13 @@ mjx-container[display="true"] + br {
 
 
     <body class="custom-background">
+    <a href="/tags/OI/page/2/" 
+       style="position: fixed; top: 20px; right: 20px; z-index: 99999; padding: 8px 14px; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #333333; background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.2s ease;" 
+       onmouseover="this.style.borderColor='#999';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.12)'" 
+       onmouseout="this.style.borderColor='#e0e0e0';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.08)'">
+       中文
+    </a>
+  
         <div id="kratos-wrapper">
     <div id="kratos-page">
         <div id="kratos-header">
@@ -1082,20 +1089,5 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-</body>
+    </body>
 </html>
