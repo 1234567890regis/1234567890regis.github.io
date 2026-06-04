@@ -186,44 +186,46 @@ mjx-container[display="true"] + br {
 
     <body class="custom-background">
     <a id="lang-switcher-btn" href="#" 
-       style="position: fixed; top: 20px; right: 20px; z-index: 99999; padding: 8px 16px; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #ffffff; background-color: #87CEFA; border: none; border-radius: 24px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease; display: none; /* Hidden by default until JavaScript resolves the path to prevent flashing */" 
+       style="position: fixed; top: 20px; right: 20px; z-index: 99999; padding: 8px 16px; font-size: 14px; font-weight: 500; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #ffffff; background-color: #87CEFA; border: none; border-radius: 24px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.2s ease; display: none;" 
        onmouseover="this.style.backgroundColor='#6495ED';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.2)'" 
        onmouseout="this.style.backgroundColor='#87CEFA';this.style.boxShadow='0 2px 8px rgba(0,0,0,0.15)'">
     </a>
     <script>
       (function() {
-        var btn = document.getElementById('lang-switcher-btn');
-        var currentPath = window.location.pathname;
-        
-        // Normalize path by removing the domain and matching subdirectories accurately
-        if (currentPath.indexOf('/en/') !== -1 || currentPath.endsWith('/en')) {
-          // -----------------------------------------------------------
-          // THE USER IS ON THE ENGLISH SITE
-          // -----------------------------------------------------------
-          btn.innerText = '中文';
+        function updateLanguageButton() {
+          var btn = document.getElementById('lang-switcher-btn');
+          if (!btn) return;
           
-          // Compute the Chinese equivalent path by removing the '/en' segment
-          var target = currentPath.replace(/\/en(\/|$)/, ' class="custom-background"');
-          btn.href = target || '/';
-        } else {
-          // -----------------------------------------------------------
-          // THE USER IS ON THE CHINESE SITE
-          // -----------------------------------------------------------
-          btn.innerText = 'English';
+          var currentPath = window.location.pathname;
+          var isEnglish = currentPath.indexOf('/en/') !== -1 || currentPath.endsWith('/en') || currentPath.endsWith('/en/');
           
-          // Prepend '/en/' to the current path cleanly, avoiding double slashes
-          var base = currentPath.startsWith('/') ? currentPath : '/' + currentPath;
-          
-          // Handle root index routing vs subpage routing cleanly
-          if (base === '/') {
-            btn.href = '/en/';
+          if (isEnglish) {
+            // State: We are on an English page -> Button must show "中文" and link back to Chinese
+            if (btn.innerText !== '中文') btn.innerText = '中文';
+            
+            var target = currentPath.replace(/\/en(\/|$)/, ' class="custom-background"');
+            if (!target.startsWith('/')) target = '/' + target;
+            if (btn.getAttribute('href') !== target) btn.href = target;
           } else {
-            btn.href = '/en' + base;
+            // State: We are on a Chinese page -> Button must show "English" and link to English
+            if (btn.innerText !== 'English') btn.innerText = 'English';
+            
+            var base = currentPath.startsWith('/') ? currentPath : '/' + currentPath;
+            var targetEn = (base === '/') ? '/en/' : '/en' + base;
+            if (btn.getAttribute('href') !== targetEn) btn.href = targetEn;
+          }
+          
+          // Force make visible once state calculations complete
+          if (btn.style.display !== 'inline-block') {
+            btn.style.display = 'inline-block';
           }
         }
-        
-        // Make the button visible now that text and links match the state perfectly
-        btn.style.display = 'inline-block';
+
+        // Run instantly when components render
+        updateLanguageButton();
+
+        // Keep a background observer loop active to instantly catch background pjax page updates
+        setInterval(updateLanguageButton, 100);
       })();
     </script>
   
@@ -780,5 +782,20 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
