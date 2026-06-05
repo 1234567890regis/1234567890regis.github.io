@@ -280,7 +280,7 @@ mjx-container[display="true"] + br {
             <hr />
             <div itemprop="articleBody"><p>My reflection on HKOI TFT 2026. Rank: 7, Points: 313, Performance: Extremely Good (Day 1) + Extremely Bad (Day 2)</p>
 <span id="more"></span>
-<h1 id="IOI-NOI-TFT-2026-Reflection"><a href="#IOI-NOI-TFT-2026-Reflection" class="headerlink" title="IOI/NOI TFT 2026 Reflection"></a>IOI/NOI TFT 2026 Reflection</h1><h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>This year’s results, I guess everybody knows…</p>
+<h1 id="IOI-NOI-TFT-2026-Reflection"><a href="#IOI-NOI-TFT-2026-Reflection" class="headerlink" title="IOI/NOI TFT 2026 Reflection"></a>IOI/NOI TFT 2026 Reflection</h1><h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>This year's results, I guess everybody knows…</p>
 <ul>
 <li>Rank: 7</li>
 <li>Points: 313</li>
@@ -338,7 +338,7 @@ mjx-container[display="true"] + br {
 </div>
 <p><img src="https://cdn.luogu.com.cn/upload/image_hosting/j9yce1wp.png" width="1280" height="676"></p>
 <h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>In total, I spent about 200+ hours preparing TFT, which is considerably a lot. And I have improved, a lot!</p>
-<p>It all started when I learned that I would not be eligible for this year’s IMO training because I didn’t attend the 2025 Prelim. Of course, before that, I still routinely did OI problems, but I was much more serious after that.</p>
+<p>It all started when I learned that I would not be eligible for this year's IMO training because I didn't attend the 2025 Prelim. Of course, before that, I still routinely did OI problems, but I was much more serious after that.</p>
 <p>Here are some of my preparation pictures, and a gallery of solved problems during my TFT preparation period (starting from 2026/1/1):</p>
 <ul>
 <li>Luogu: 98 problems</li>
@@ -360,7 +360,7 @@ mjx-container[display="true"] + br {
 <ul>
 <li><strong>Total (excluding other small OJs): 385 problems</strong></li>
 </ul>
-<h2 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy"></a>Strategy</h2><p>At Thursday’s training, Soso told me to carefully think about my strategy. And I did, I wrote it down as follows:</p>
+<h2 id="Strategy"><a href="#Strategy" class="headerlink" title="Strategy"></a>Strategy</h2><p>At Thursday's training, Soso told me to carefully think about my strategy. And I did, I wrote it down as follows:</p>
 <p><strong>TFT Strategy:</strong></p>
 <p>5h/3p = 1h40mins / problem</p>
 <ul>
@@ -380,8 +380,8 @@ mjx-container[display="true"] + br {
 <li>9:00-12:00 IMO Prelim 2026</li>
 </ul>
 <p>I only spent 3 hours preparing for the Prelim (by doing the 2025 Prelim as a mock test), because I know it is not hard. In fact, I think Prelim is more like a calculation competition than a math competition to me. In the end, of course, I got 25 points, which is a nice score.</p>
-<p>I won’t talk too much about it, but my strategy for Prelim was simple: beat the timer. This means that score(t)/t is greater than 30 pts / 180 mins for most of the competition. I completed my goal.</p>
-<p>In the last 30 minutes, I decided not to do any more Prelim problems and instead start rechecking my answers, since I knew that 25 points is more than sufficient, and also to mentally prepare for the afternoon’s TFT. In the end, I corrected 1 problem and finished the competition.</p>
+<p>I won't talk too much about it, but my strategy for Prelim was simple: beat the timer. This means that score(t)/t is greater than 30 pts / 180 mins for most of the competition. I completed my goal.</p>
+<p>In the last 30 minutes, I decided not to do any more Prelim problems and instead start rechecking my answers, since I knew that 25 points is more than sufficient, and also to mentally prepare for the afternoon's TFT. In the end, I corrected 1 problem and finished the competition.</p>
 <p>I then took a taxi to CityU and ate some stuff.</p>
 <h3 id="TFT-Day-1"><a href="#TFT-Day-1" class="headerlink" title="TFT Day 1"></a>TFT Day 1</h3><p><strong>My Subtask Scoring:</strong></p>
 <p><img src="https://cdn.luogu.com.cn/upload/image_hosting/a6t5uv0s.png" width="960" height="96"></p>
@@ -390,18 +390,18 @@ mjx-container[display="true"] + br {
 <ul>
 <li>0:00-0:20 mins: Read problems, try sort difficulty</li>
 </ul>
-<p>I quickly read all the problems. The first one is an interactive problem, and I don’t have any ideas at first sight. The second is obviously a DP with transition f(i)=min(f(j)+w(i, j)), which reminds me of D&amp;C DP. The third is a very weird batch problem that I only thought of an O(n^8) solution at first sight.</p>
-<p>At this time, I’m already pretty sure that the second problem is easiest (mostly because of its simple structure), so I decided to spend time on P2.</p>
+<p>I quickly read all the problems. The first one is an interactive problem, and I don't have any ideas at first sight. The second is obviously a DP with transition f(i)=min(f(j)+w(i, j)), which reminds me of D&amp;C DP. The third is a very weird batch problem that I only thought of an O(n^8) solution at first sight.</p>
+<p>At this time, I'm already pretty sure that the second problem is easiest (mostly because of its simple structure), so I decided to spend time on P2.</p>
 <ul>
 <li>0:20-0:45 mins: Write P2 75pts</li>
 </ul>
-<p>I first start with O(n^2) to verify my DP’s correctness. I got the DP transition wrong at first, but after 10 minutes of debugging, I got the correct transition formula and submitted. 64pts.</p>
+<p>I first start with O(n^2) to verify my DP's correctness. I got the DP transition wrong at first, but after 10 minutes of debugging, I got the correct transition formula and submitted. 64pts.</p>
 <p>Taking a look at the transition formula, I realize that it is just some linear combination, so I can easily use CHT to optimize it. However, since the rest of the solution was only worth 25pts, I decided not to write it first and instead tried to “maximize my score” by trying other problems first.</p>
 <p>I first wrote an easy 11pts to get 75pts total in P2. Since my strategy is to try batch problems first, I decided to go on to P3.</p>
 <ul>
 <li>0:45-1:10 mins: Think P3</li>
 </ul>
-<p>After reading the problem, I still didn’t have any thoughts. I proceeded to write an O(n^8) brute force to make sure I understood everything correctly. Get 4pts.</p>
+<p>After reading the problem, I still didn't have any thoughts. I proceeded to write an O(n^8) brute force to make sure I understood everything correctly. Get 4pts.</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">calc</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> y, <span class="type">int</span> u, <span class="type">int</span> v)</span> </span>{ <span class="keyword">return</span> <span class="built_in">abs</span>(u - x) + <span class="built_in">abs</span>(y - v); }</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">minimum_time</span><span class="params">(<span class="type">int</span> R, <span class="type">int</span> C)</span> </span>{</span><br><span class="line">	vector&lt;string&gt; strs = { <span class="string">"sct"</span>, <span class="string">"stc"</span>, <span class="string">"tsc"</span>, <span class="string">"tcs"</span>, <span class="string">"cst"</span>, <span class="string">"cts"</span> };</span><br><span class="line">	<span class="type">int</span> ans = inf;</span><br><span class="line">	<span class="keyword">for</span> (string str : strs)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">auto</span> [x1, y1] : <span class="built_in">get</span>(str[<span class="number">0</span>]))</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">auto</span> [x2, y2] : <span class="built_in">get</span>(str[<span class="number">1</span>]))</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">auto</span> [x3, y3] : <span class="built_in">get</span>(str[<span class="number">2</span>]))</span><br><span class="line">					ans = <span class="built_in">min</span>(ans, <span class="built_in">calc</span>(R, C, x1, y1) + <span class="built_in">calc</span>(x1, y1, x2, y2) + <span class="built_in">calc</span>(x2, y2, x3, y3) + <span class="built_in">calc</span>(x3, y3, R, C));</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 <p>After thinking for some minutes, I think that the full solution is literally impossible. So I skipped this problem.</p>
 <ul>
@@ -419,12 +419,12 @@ mjx-container[display="true"] + br {
 </ul>
 <p>I decided to spend time on P1 because the P3 batch seems undoable. I started by doing Subtask 1, which is very easy. I used 7 mins to get Subtask 1 AC.</p>
 <p>Then I started doing Subtask 2 and 4. I quickly realize that I can do it by using binary search. I used another 11 mins to get Subtask 2 AC and Subtask 4 18pts.</p>
-<p>Then I started doing Subtask 3 or the full solution. I’m sure that I needed to find either a “rainbow” or a “big blob” first. I first started exploring the possibilities of the query, which are things I can do.</p>
+<p>Then I started doing Subtask 3 or the full solution. I'm sure that I needed to find either a “rainbow” or a “big blob” first. I first started exploring the possibilities of the query, which are things I can do.</p>
 <p>I found that I can do the following:</p>
 <ul>
 <li>Given a “big blob”, a set S, and a color x, determine whether x is in S or not. This is by querying (S+x+stuff from big blob) and (S + stuff from big blob) and seeing if anything changes.</li>
 </ul>
-<p>However, I don’t see anything that can be done with this operation.</p>
+<p>However, I don't see anything that can be done with this operation.</p>
 <p>After another while of thinking, I found another thing I can do with the query:</p>
 <ul>
 <li>Given any n - 1 squares, find all squares that do not share the same color as any of these n - 1 squares. This is by replacing the first square with all n^2 other squares, and seeing if it is equal to the minimum.</li>
@@ -435,15 +435,15 @@ mjx-container[display="true"] + br {
 <li>2:45-3:25 mins: Think P3</li>
 </ul>
 <p>Firstly, I spent 5 mins to AC Subtask 1. Then I tried making observations and ideas.</p>
-<p>After further thinking, I notice that the path x-&gt;a-&gt;b-&gt;c can be split into two distinct paths x-&gt;a-&gt;b and x-&gt;c-&gt;b, thus bringing the complexity down to O(n^6). Sadly, this doesn’t get any more points.</p>
+<p>After further thinking, I notice that the path x-&gt;a-&gt;b-&gt;c can be split into two distinct paths x-&gt;a-&gt;b and x-&gt;c-&gt;b, thus bringing the complexity down to O(n^6). Sadly, this doesn't get any more points.</p>
 <p>However, I realize that after enumerating b, the grid can be split into 9 parts according to the position of x and b. I just need to query the minimum contribution of a and c in these 9 parts, and then take the minimum. However, this is a 2-D node counting problem and needs 27 2-D Sparse Tables or 27 2-D BITs or something, which is absolutely undoable. But this brings the complexity down to O(n^4) (with huge constant), which only gets 14pts. It is obviously not worth the time.</p>
-<p>Since the full solution must be O(n^2) and I couldn’t think of a solution that does not enumerate b, I think that the full solution must be O(1) query and some weird initialization and covering. But still, I have to enumerate b, which is already O(n^2). I don’t understand how an O(n^2) solution is possible, so I decided to skip and do P1 again.</p>
+<p>Since the full solution must be O(n^2) and I couldn't think of a solution that does not enumerate b, I think that the full solution must be O(1) query and some weird initialization and covering. But still, I have to enumerate b, which is already O(n^2). I don't understand how an O(n^2) solution is possible, so I decided to skip and do P1 again.</p>
 <ul>
 <li>3:25-4:00 mins: Continue thinking P1</li>
 </ul>
 <p>After a lot of thinking, I found a very mysterious solution that finds a rainbow set in 4n^2 queries.</p>
-<p>Still, I don’t know how to use a rainbow set. Maybe it isn’t even useful, since the subtasks indicate that a “big blob” might be more useful instead.</p>
-<p>I tried thinking about a full solution. I found that it is implausible to quickly determine many squares at once, so the full solution must be about 2.7 queries per square. After thinking about what information I haven’t used, I realized I must make use of the value itself instead of simply comparing two return values.</p>
+<p>Still, I don't know how to use a rainbow set. Maybe it isn't even useful, since the subtasks indicate that a “big blob” might be more useful instead.</p>
+<p>I tried thinking about a full solution. I found that it is implausible to quickly determine many squares at once, so the full solution must be about 2.7 queries per square. After thinking about what information I haven't used, I realized I must make use of the value itself instead of simply comparing two return values.</p>
 <p>But to make use of the value, I must query something like 1, 2, 2, 3, 3, 3, …, sqrt(N), …, sqrt(N), but this only covers sqrt(N) values. Now I have to query sqrt(N) times per square, which is even worse than log(N). I have no further ideas, so I discarded this idea.</p>
 <p>After more thinking, I came up with an extremely mysterious randomized solution, which I thought could run in O(cn^2 log n), but after I implemented it, it turned out to be fake.</p>
 <p>Seeing that not much time is left, I decided to do P3 again.</p>
@@ -469,12 +469,12 @@ mjx-container[display="true"] + br {
 <li>Competition End</li>
 </ul>
 <h3 id="Post-Competition"><a href="#Post-Competition" class="headerlink" title="Post-Competition"></a>Post-Competition</h3><p>I was extremely worried, thinking that I was doomed. In the competition, I saw Migration suddenly become very happy and instantly go to the toilet. I thought he ACed P1 (although this thought did not affect my strategy at all), but turns out he just ACed P2. After asking around for results, I found Adam 193 culver 155 carson 144 Migration 140. I feel very shocked - this was my highest rank in all HKOI competitions! And it occurred in TFT!</p>
-<p>The trainers announced all solutions in 1 nanoseconds (I didn’t listen carefully lol) and scoreboard release. Rank 3!!!</p>
+<p>The trainers announced all solutions in 1 nanoseconds (I didn't listen carefully lol) and scoreboard release. Rank 3!!!</p>
 <p>(Although I believe myself to be Rank 2 if not for penalty time)</p>
-<p>However, this competition really didn’t distinguish the trainees a lot. The margins were small, and I knew that this was definitely not the end. But I did learn that I have the ability to get rank top 4, and I had more confidence in myself.</p>
+<p>However, this competition really didn't distinguish the trainees a lot. The margins were small, and I knew that this was definitely not the end. But I did learn that I have the ability to get rank top 4, and I had more confidence in myself.</p>
 <p>Later, Soso told me to revise my strategies. Then, we went to the mall to eat some food. During the walk to the mall, 123abc showed me the Prelim answers that culver gave him right before TFT. 25pts! Nice, although it was much in my expectations. After eating, I went home with tanjianlang.</p>
-<p>I didn’t make any changes to my strategy and decided to compete in Day 2 as if I had no advantage.</p>
-<h3 id="Sunday"><a href="#Sunday" class="headerlink" title="Sunday"></a>Sunday</h3><p>I slept at 22:30 the night before and woke up at 07:30. After eating breakfast, I decided to revise some templates. Since yesterday’s problems didn’t have graph problems, I decided to revise HLD and all sorts of Connectivity. I quickly finished all those templates and didn’t do anything more.</p>
+<p>I didn't make any changes to my strategy and decided to compete in Day 2 as if I had no advantage.</p>
+<h3 id="Sunday"><a href="#Sunday" class="headerlink" title="Sunday"></a>Sunday</h3><p>I slept at 22:30 the night before and woke up at 07:30. After eating breakfast, I decided to revise some templates. Since yesterday's problems didn't have graph problems, I decided to revise HLD and all sorts of Connectivity. I quickly finished all those templates and didn't do anything more.</p>
 <p>I ate some stuff and got a taxi to CityU.</p>
 <h3 id="TFT-Day-2"><a href="#TFT-Day-2" class="headerlink" title="TFT Day 2"></a>TFT Day 2</h3><p><strong>My Subtask Scoring:</strong></p>
 <p><img src="https://cdn.luogu.com.cn/upload/image_hosting/6mgp8fki.png" width="960" height="93"></p>
@@ -485,11 +485,11 @@ mjx-container[display="true"] + br {
 </ul>
 <p>It only took me 15 mins to read and understand all the problems. Then I started thinking.</p>
 <p>For P1, I quickly discovered that I can partition the edges into tight edges and loose edges, and I can binary search on the last new tight edge for every query. Then the change is basically making all edges tight, making at most one edge from tight to loose, and making no changes to anything else. This leads to a very simple amortized solution idea, since there is at most one edge from tight to loose, the total number of edges that went from loose to tight is O(n+q).</p>
-<p>For P2, I don’t have many ideas, but Subtask 1 is very doable. I quickly found a 25pts solution, and decided to skip for now.</p>
-<p>For P3, I literally instantly solved it within 5 minutes in my mind. Using what? It’s <del>very simple,</del> using <strong>Bitset + Virtual Tree + Matrix + Heavy Light Decomposition + Segment Tree + Dynamic DP</strong>. O(n^2/w+n log^2 n). Yeah. I ain’t writing that bruh.</p>
-<p>For those who are interested in my toxic solution, here it is. Offline the queries, and for every color, you get a virtual tree with O(c_i) nodes, where the sum of c_i is O(n). For the nodes that are not in the virtual tree, if it is controlled by Alice, it doesn’t matter; if it is controlled by Bob, then if it has more than one child, Bob wins instantly, and we can delete this node and its subtree. The deletion can be maintained by bitset, I guess. And if it has only one child, then it doesn’t matter.</p>
+<p>For P2, I don't have many ideas, but Subtask 1 is very doable. I quickly found a 25pts solution, and decided to skip for now.</p>
+<p>For P3, I literally instantly solved it within 5 minutes in my mind. Using what? It's <del>very simple,</del> using <strong>Bitset + Virtual Tree + Matrix + Heavy Light Decomposition + Segment Tree + Dynamic DP</strong>. O(n^2/w+n log^2 n). Yeah. I ain't writing that bruh.</p>
+<p>For those who are interested in my toxic solution, here it is. Offline the queries, and for every color, you get a virtual tree with O(c_i) nodes, where the sum of c_i is O(n). For the nodes that are not in the virtual tree, if it is controlled by Alice, it doesn't matter; if it is controlled by Bob, then if it has more than one child, Bob wins instantly, and we can delete this node and its subtree. The deletion can be maintained by bitset, I guess. And if it has only one child, then it doesn't matter.</p>
 <p>For each query, we split the query into 4 operations. Now each operation is <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4719">[Template] DDP</a> (aka Dynamic Dynamic Programming). We can use Matrix + HLD + Segment Tree to maintain it. Since the sum of sizes of virtual trees is only O(n), we have solved this problem in O(n^2/w+n log^2 n).</p>
-<p>Of course, I didn’t think that this was the intended solution anyway. But I decided that this was probably the hardest problem in the problem set, so I decided to do P1 first.</p>
+<p>Of course, I didn't think that this was the intended solution anyway. But I decided that this was probably the hardest problem in the problem set, so I decided to do P1 first.</p>
 <ul>
 <li>0:45-1:20 mins: Try P1</li>
 </ul>
@@ -498,16 +498,16 @@ mjx-container[display="true"] + br {
 <ul>
 <li>1:20-1:50 mins: Try P2</li>
 </ul>
-<p>I decided to write a helper function that might also be useful for Subtask 2. The function’s purpose is to assign “identities” to each player, so I can always assume the smaller one loses to the bigger one and let the function do the rest. However, I keep getting WA on the samples, and after debugging it, I submit and get WA 0pts.</p>
+<p>I decided to write a helper function that might also be useful for Subtask 2. The function's purpose is to assign “identities” to each player, so I can always assume the smaller one loses to the bigger one and let the function do the rest. However, I keep getting WA on the samples, and after debugging it, I submit and get WA 0pts.</p>
 <p>I quickly realized that my function was wrong, since it also needs to swap the identities of players who competed with them. And it is extremely complicated to implement. So I decided to switch to P3 first.</p>
 <ul>
 <li>1:50-2:25 mins: Get P3 53pts</li>
 </ul>
-<p>I first wrote an O(nq) brute force that does Tree DP on every query. 30pts. I then see that Subtask 6 can be done with bitset. So I write that too. 53pts. Didn’t know why it took so long, maybe because of debugging.</p>
+<p>I first wrote an O(nq) brute force that does Tree DP on every query. 30pts. I then see that Subtask 6 can be done with bitset. So I write that too. 53pts. Didn't know why it took so long, maybe because of debugging.</p>
 <ul>
 <li>2:25-3:05 mins: Closer to P1 full</li>
 </ul>
-<p>Back to P1. I realize that I actually don’t need a segment tree, and instead, I can use a monotonic stack, which would be easier to manage in updating contributions.</p>
+<p>Back to P1. I realize that I actually don't need a segment tree, and instead, I can use a monotonic stack, which would be easier to manage in updating contributions.</p>
 <p>But after calculations on paper, I found that the contribution was much harder than I thought. The problem is that I need to find the total distance between nodes on a chain and a fixed point. And the chain has a distance of k between adjacent nodes, which made it even harder. I knew I had to find the projection, fix some corner cases, and do a lot of math. Based on my bad experience with case analysis, I decided to skip this problem for now.</p>
 <ul>
 <li>3:05-3:15 mins: Get P3 Subtask 2</li>
@@ -518,8 +518,8 @@ mjx-container[display="true"] + br {
 </ul>
 <p>I tried to complete my P1 code, but as I was writing more and more, I realized that it was too risky for me to try to AC with the given time left. This was literally a waste of time, as I tried to implement the endless math functions and case analysis.</p>
 <p>So I started thinking P2. Since not much time is left, I first tried to aim for a full solution. My thinking was as follows (please do criticize me):</p>
-<p>Of course, I know how to find the top 1. But then I didn’t think that I could directly find the top 2 (maybe I thought it was O(n) for some reason). What I thought was different - I can use log n = 12 rounds, with the j-th round comparing (i, i+2^j mod n). Then I can now remove the ones that lost 8 rounds or more, and now the number of players has drastically decreased.</p>
-<p>However, this solution is very bad, so it doesn’t get any points. So I go back to P1.</p>
+<p>Of course, I know how to find the top 1. But then I didn't think that I could directly find the top 2 (maybe I thought it was O(n) for some reason). What I thought was different - I can use log n = 12 rounds, with the j-th round comparing (i, i+2^j mod n). Then I can now remove the ones that lost 8 rounds or more, and now the number of players has drastically decreased.</p>
+<p>However, this solution is very bad, so it doesn't get any points. So I go back to P1.</p>
 <p>After making one quick submission on P1, I decided that the P1 full solution was impossible. So I decided that spending on P2 is probably better than wasting time on P1.</p>
 <ul>
 <li>3:45-4:00 mins: Get P2 25pts</li>
@@ -530,41 +530,41 @@ mjx-container[display="true"] + br {
 <li>4:00-4:15 mins: Get P1 Subtask 5, 6</li>
 </ul>
 <p>Feeling disastrous in my P1 performance, I decided to make one last try at subtasks. To my surprise, I suddenly realize that Subtasks 5 and 6 are very easy, given that I already know the positions. I added a simple arithmetic sequence sum and ACed Subtask 5, 6 in 5 mins.</p>
-<p>I then took a final look at P1 Subtask 4 and P3 Subtask 5, two subtasks that I completely skipped. But I do not have easy ideas I could write. At least, it wasn’t as worthy as P2. So I decided to <strong>all-in</strong> P2.</p>
+<p>I then took a final look at P1 Subtask 4 and P3 Subtask 5, two subtasks that I completely skipped. But I do not have easy ideas I could write. At least, it wasn't as worthy as P2. So I decided to <strong>all-in</strong> P2.</p>
 <ul>
 <li>4:15-5:00 mins: P2</li>
 </ul>
 <p><strong>This is where all goes wrong.</strong></p>
 <p>Instead of thinking about getting rank 1, then rank 2, etc., one by one, I thought about the idea another way. If I got the final result, then the 4088 people must have lost to 16 other people.</p>
-<p>I literally didn’t realize that A-&gt;B, B-&gt;C indicates A-&gt;C. That being said, I thought I should arrange the competitions in a way that every x must lose in 16 competitions.</p>
+<p>I literally didn't realize that A-&gt;B, B-&gt;C indicates A-&gt;C. That being said, I thought I should arrange the competitions in a way that every x must lose in 16 competitions.</p>
 <p>And the next step was straightforward for me. If I split the N contestants into N/32 groups and play 32 competitions within each group, then I can exactly eliminate half of the people, since they have lost 16 competitions. So now I get a polylog solution.</p>
 <p>I started implementing it for a while. But after checking the problem again, I realized that this solution needed 32*12=3864 competitions, which will obviously get me 0pts.</p>
-<p>There are fewer than 20 minutes now. And I could not think of a better solution. I was too deeply immersed in my chain of thought that I literally didn’t realize that finding the maximum one-by-one gives 96 competitions, which is 22.8pts (in reality, much more), which would be sufficient to get me into IOI.</p>
+<p>There are fewer than 20 minutes now. And I could not think of a better solution. I was too deeply immersed in my chain of thought that I literally didn't realize that finding the maximum one-by-one gives 96 competitions, which is 22.8pts (in reality, much more), which would be sufficient to get me into IOI.</p>
 <p>I spent the last few minutes trying to solve Subtask 1 30pts without avail.</p>
 <p>Competition end.</p>
 <h3 id="Post-TFT"><a href="#Post-TFT" class="headerlink" title="Post-TFT"></a>Post-TFT</h3><p>I already knew I was doomed because of my poor scoring in P5. The feeling worsened when I saw my neighbor WYK23X35 score 0+83.6+0. The feeling worsened again when Mr. Wong told me I scored the lowest in P5 among PCOI.</p>
-<p>Solution session. Wasn’t happy enough to listen carefully.</p>
-<p>After the solution session, I got a photo taken by ethening, and talked to others. It seems like culver didn’t want to participate in NOI, and a guy (rank 9 or 10, I guess) was extremely happy and thanked culver.</p>
-<p>Tosivan came to me and asked me if I was Regis. I said yes. He said that he must thank me for not putting effort into P5 (I did), or else he wouldn’t have had the chance to go to IOI. I sincerely wished him good luck in IOI.</p>
+<p>Solution session. Wasn't happy enough to listen carefully.</p>
+<p>After the solution session, I got a photo taken by ethening, and talked to others. It seems like culver didn't want to participate in NOI, and a guy (rank 9 or 10, I guess) was extremely happy and thanked culver.</p>
+<p>Tosivan came to me and asked me if I was Regis. I said yes. He said that he must thank me for not putting effort into P5 (I did), or else he wouldn't have had the chance to go to IOI. I sincerely wished him good luck in IOI.</p>
 <p>Soso told me that he got a 60+pts solution in P5 in 0 seconds. orz. He told me to write a clear reflection, so here it is :)</p>
 <h2 id="Reflection"><a href="#Reflection" class="headerlink" title="Reflection"></a>Reflection</h2><p>Obviously, the hardest TFT in the history of TFT.</p>
 <p>Extremely obvious from the scoreboard, the biggest mistake is not being able to score higher in P5 despite spending at least 1.5 hours on the problem.</p>
-<p>This time, it is not my strategy that failed, it is completely skill issue. Before the competition, I would have never believed that there exists a problem that I spent 1h 30 mins on and got rank 56 among the 80 contestants. But it’s true, and unfortunately, this problem appeared in TFT.</p>
+<p>This time, it is not my strategy that failed, it is completely skill issue. Before the competition, I would have never believed that there exists a problem that I spent 1h 30 mins on and got rank 56 among the 80 contestants. But it's true, and unfortunately, this problem appeared in TFT.</p>
 <p>What have I learnt from this TFT? I guess I have learnt some really important lessons:</p>
 <ul>
 <li>Do not immerse too deeply in one thought.</li>
 </ul>
 <p>Really strong OIers have a hundred different thoughts when it comes to these interactive problems, but I usually only have fewer than 2 thoughts.</p>
-<p>If it was not because I only had 1 hour left, normally I would’ve gone to the toilet. But I didn’t because it usually takes a while for the trainers to approve your toilet request, and you would have even less time left.</p>
+<p>If it was not because I only had 1 hour left, normally I would've gone to the toilet. But I didn't because it usually takes a while for the trainers to approve your toilet request, and you would have even less time left.</p>
 <p>From samples from various competitions, I have made this mistake a lot before, just to name a few:</p>
 <ol>
 <li><p>In the 2025 Guangdong MO provincial selection, I spent one hour out of 3.5 hours trying to prove a false statement in a geometry problem.</p>
 </li>
 <li><p>In 2026 HKOI Junior, I spent 90 minutes on P4 without realizing that there was a better implementation.</p>
 </li>
-<li><p>In 2026 CSP Senior, I debugged my code for 2 hours without avail. The reason is that I didn’t check my array declaration.</p>
+<li><p>In 2026 CSP Senior, I debugged my code for 2 hours without avail. The reason is that I didn't check my array declaration.</p>
 </li>
-<li><p>In 2026 APIO, I didn’t even read P3 because I thought it was hard. Of course, it turned out to be the easiest problem in the problem set.</p>
+<li><p>In 2026 APIO, I didn't even read P3 because I thought it was hard. Of course, it turned out to be the easiest problem in the problem set.</p>
 </li>
 <li><p>2026/5/24 TFT Day 2 P2. I would never forget this problem.</p>
 </li>
@@ -573,23 +573,23 @@ mjx-container[display="true"] + br {
 <li>Order the problems wisely.</li>
 </ul>
 <p>A really important lesson I learnt from this TFT. For example:</p>
-<p>Both Animal Migration and tosivan found the crucial D1P3 observation and dumped lots of time and energy on this problem. Turns out that this problem was the hardest in the problem set. On the other hand, I did not find the crucial observation, and so I didn’t spend time on D1P3.</p>
+<p>Both Animal Migration and tosivan found the crucial D1P3 observation and dumped lots of time and energy on this problem. Turns out that this problem was the hardest in the problem set. On the other hand, I did not find the crucial observation, and so I didn't spend time on D1P3.</p>
 <p>What does that mean? In terms of ability, my observation skills failed on P3, but I got higher marks in total on Day 1. That is luck. But if I made more observations in P3, would I have spent more time on P3? Probably yes. Would I get more marks in total? Probably no, maybe even less.</p>
 <p>What I mean is that, maybe, the smartest decision on which problem to do should be based on comparing the expected scores for each problem, not wishful thinking.</p>
-<p>And now on Day 2, I made the same mistake. If I hadn’t spent about 1 hour wasting time on P1’s case analysis, I would have definitely achieved a high score in P2. But why did I spend so much time on P1? It was probably because of confidence in my tree abilities. And later, it was because of my unwillingness to only get 23pts when I wrote a near-full solution. The instant I saw 2 tree problems in the problem set, I told myself that I probably have the ability to AC at least one problem.</p>
+<p>And now on Day 2, I made the same mistake. If I hadn't spent about 1 hour wasting time on P1's case analysis, I would have definitely achieved a high score in P2. But why did I spend so much time on P1? It was probably because of confidence in my tree abilities. And later, it was because of my unwillingness to only get 23pts when I wrote a near-full solution. The instant I saw 2 tree problems in the problem set, I told myself that I probably have the ability to AC at least one problem.</p>
 <ul>
 <li>Do not ignore non-batch problems. Spend more time on it.</li>
 </ul>
 <p>Unlike batch problems that can be easily trained to be good at, non-batch problems need lots of observation and ideas, even if they are not good or sufficient to solve the problem. And as I have said, I usually only have fewer than 2 ideas in interactive problems.</p>
 <p>I really need to do more non-batch problems. If TFT only had the four batch problems, you can find that I rank second in the leaderboard (because Adam trained even more than me on batch problems).</p>
-<p>Sometimes, a non-batch problem’s scores are correlated with the time spent on it. Such as both D1P1 and D2P2. It is really not a good strategy to not spend much time on non-batch problems.</p>
+<p>Sometimes, a non-batch problem's scores are correlated with the time spent on it. Such as both D1P1 and D2P2. It is really not a good strategy to not spend much time on non-batch problems.</p>
 <p><em>最後的最後，愿後來者，警鐘長鳴！</em> - tanjianlang</p>
 <h2 id="Afterwords"><a href="#Afterwords" class="headerlink" title="Afterwords"></a>Afterwords</h2><p>Should I be happy or sad?</p>
 <p>To be honest, I am more sad than happy about my results, mostly because I know that I definitely have the ability to go to NOI, since I never dropped out of the top 8 in Mini-Comps. Going to IOI is my dream, and I have a chance aiming at it, but I failed.</p>
 <p>Another important thing I am sad about is, of course, the PCOI streak. The reality is, it has reset.</p>
-<p>The 18-year streak for me is somewhat magical, a lot of exceptionally strong OIers have contributed to it. It feels somewhat sacred to me, and I feel the responsibility to keep it running. And this year, most of the responsibility of its resetting is undoubtedly on me, and I couldn’t bear this thought.</p>
+<p>The 18-year streak for me is somewhat magical, a lot of exceptionally strong OIers have contributed to it. It feels somewhat sacred to me, and I feel the responsibility to keep it running. And this year, most of the responsibility of its resetting is undoubtedly on me, and I couldn't bear this thought.</p>
 <p>But, on the other hand, could I have done anything extra to change the final result?</p>
-<p>Yes, maybe… by doing more non-batch tasks and stuff, and being smarter when doing P5 (but can’t say too many things after the results have been published). But overall, I have already given my best effort I could, spending time doing OI problems, and enjoying the process. What could I regret? After all, it is the process that makes it interesting, not necessarily the conclusion.</p>
+<p>Yes, maybe… by doing more non-batch tasks and stuff, and being smarter when doing P5 (but can't say too many things after the results have been published). But overall, I have already given my best effort I could, spending time doing OI problems, and enjoying the process. What could I regret? After all, it is the process that makes it interesting, not necessarily the conclusion.</p>
 <p>Maybe, the PCOI streak reset is not necessarily a bad thing. It is now not a burden, but a reminiscent hope that future OIers would aim to recreate.</p>
 <p>Maybe, my ability is simply not dominantly strong enough like Adam, not to mention OI gods like gamegame, Mr. WongChun1234, benson1029, etc, so maybe a first-year NOI is already a good result for me.</p>
 <p>Also, I would like to express my thanks to Soso, ethening, Mr. Wong, benson1029, and firewater for being my role models, encouraging me, and giving me hope!</p>
@@ -781,7 +781,7 @@ mjx-container[display="true"] + br {
 <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
     <a class="meta-item" href="/en/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
         <span class="title" style="margin-bottom: 8px; display: block;">Article</span>
-        <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">28</span>
+        <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">29</span>
     </a>
     <a class="meta-item" href="/en/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
         <span class="title" style="margin-bottom: 8px; display: block;">Category</span>
@@ -800,7 +800,7 @@ mjx-container[display="true"] + br {
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>Categories List</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/">MO</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Geometry/">Geometry</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/">OI</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/">MO</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/">OI</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
   </aside>
 
 
@@ -809,7 +809,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>Tagcloud</h4>
       <div class="tag-clouds">
-        <a href="/en/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/en/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/en/tags/Algorithms/" style="font-size: 0.7em;">Algorithms</a> <a href="/en/tags/Geometry/" style="font-size: 0.6em;">Geometry</a> <a href="/en/tags/MO/" style="font-size: 0.65em;">MO</a> <a href="/en/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/en/tags/Reflection/" style="font-size: 0.75em;">Reflection</a> <a href="/en/tags/Solutions/" style="font-size: 0.7em;">Solutions</a> <a href="/en/tags/Training/" style="font-size: 0.65em;">Training</a>
+        <a href="/en/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/en/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/en/tags/Algorithms/" style="font-size: 0.73em;">Algorithms</a> <a href="/en/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/en/tags/MO/" style="font-size: 0.7em;">MO</a> <a href="/en/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/en/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/en/tags/Solutions/" style="font-size: 0.73em;">Solutions</a> <a href="/en/tags/Training/" style="font-size: 0.67em;">Training</a>
       </div>
   </aside>
 
@@ -851,6 +851,8 @@ mjx-container[display="true"] + br {
             
           
         
+          
+            
           
             
           

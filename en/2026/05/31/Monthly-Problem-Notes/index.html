@@ -282,7 +282,7 @@ mjx-container[display="true"] + br {
 <span id="more"></span>
 <p>Every month starting from June, I will choose one very interesting problem and write a note (subtasks, thinking process, solution, etc) on this problem.</p>
 <p>ty benson1029 for suggesting this idea :)</p>
-<h1 id="May"><a href="#May" class="headerlink" title="May"></a>May</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>I’m not gonna post TFT problems ig, although they’re quite interesting.</p>
+<h1 id="May"><a href="#May" class="headerlink" title="May"></a>May</h1><h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>I'm not gonna post TFT problems ig, although they're quite interesting.</p>
 <p>Although I first decided to start from June, I just came across a very non-standard graph construction problem and decided to put it in May, although it probably does not qualify as “a good OI problem”. The problems in the next few months will be even more interesting.</p>
 <h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><p>Source: Adapted from 2026 Guangdong Mathematical Olympiad Provincial Selection Test Preliminary Test Section Two Problem Two (aka 2026 GDMO Prelim S2 P2)</p>
 <p>Problem: Construct a sub-tournament graph with 100 nodes, such that in every K4-subgraph, there exists a loop of length 3.</p>
@@ -298,7 +298,7 @@ mjx-container[display="true"] + br {
 <li>4000: 75pts</li>
 <li>4285: 100pts</li>
 </ul>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I thought about this problem for 2 hours, but only got 75pts. If it were in an MO exam (which is where the problem came from), I would’ve gotten 0 points out of 40 points, since the original problem asked for the maximum possible edge number, and I would never have guessed the number 4285.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I thought about this problem for 2 hours, but only got 75pts. If it were in an MO exam (which is where the problem came from), I would've gotten 0 points out of 40 points, since the original problem asked for the maximum possible edge number, and I would never have guessed the number 4285.</p>
 <p>The hard part is to notice that the maximum number of edges is actually very close to 4950.</p>
 <p>Denote K[i] as any directed tournament graph with i nodes that satisfies the constraints.</p>
 <ul>
@@ -320,14 +320,14 @@ mjx-container[display="true"] + br {
 <li>100 pts solution: Construct a K7 graph with each K7 node representing 15, 15, 14, 14, 14, 14, 14 nodes, and no edges connecting the nodes in between.</li>
 </ul>
 <p>The adjacency matrix of the K7 graph (it is actually just a x-&gt;x+1, x-&gt;x+2, x-&gt;x+4):</p>
-<p>It’s in fact very easy to prove that this graph satisfies the conditions.</p>
+<p>It's in fact very easy to prove that this graph satisfies the conditions.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0 1 1 0 1 0 0</span><br><span class="line">0 0 1 1 0 1 0</span><br><span class="line">0 0 0 1 1 0 1</span><br><span class="line">1 0 0 0 1 1 0</span><br><span class="line">0 1 0 0 0 1 1</span><br><span class="line">1 0 1 0 0 0 1</span><br><span class="line">1 1 0 1 0 0 0</span><br></pre></td></tr></table></figure>
 <p>Total: 15*15+14*14*10+15*14*10=4285</p>
 <h2 id="Extra"><a href="#Extra" class="headerlink" title="Extra"></a>Extra</h2><p>How to prove that 4285 is the maximum?</p>
-<p>First, let’s prove that there cannot exist K[8].</p>
-<p>If there exists K8, then there must be a node with at least 4 out edges. Let’s say it is X-&gt;A, X-&gt;B, X-&gt;C, X-&gt;D. Considering XABC, by the condition, ABC forms a cycle, WLOG A-&gt;B, B-&gt;C, C-&gt;A. Considering XABD, we must have B-&gt;D, D-&gt;A. Considering XACD, we have a contradiction because there can’t exist a cycle of length 3.</p>
-<p>Then, by Turan’s theorem, the maximum graph without K8 has edges T(n, k)=floor((k-1)/2k*n^2)=4285.</p>
-<p>One can prove Turan’s theorem by using the adjustment method (in this case, called Zykov Symmetrization) or just induction. See <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem">Turan’s Theorem</a>.</p>
+<p>First, let's prove that there cannot exist K[8].</p>
+<p>If there exists K8, then there must be a node with at least 4 out edges. Let's say it is X-&gt;A, X-&gt;B, X-&gt;C, X-&gt;D. Considering XABC, by the condition, ABC forms a cycle, WLOG A-&gt;B, B-&gt;C, C-&gt;A. Considering XABD, we must have B-&gt;D, D-&gt;A. Considering XACD, we have a contradiction because there can't exist a cycle of length 3.</p>
+<p>Then, by Turan's theorem, the maximum graph without K8 has edges T(n, k)=floor((k-1)/2k*n^2)=4285.</p>
+<p>One can prove Turan's theorem by using the adjustment method (in this case, called Zykov Symmetrization) or just induction. See <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem">Turan's Theorem</a>.</p>
 <p>So the answer is 4285.</p>
 </div>
         </div>
@@ -492,7 +492,7 @@ mjx-container[display="true"] + br {
 <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
     <a class="meta-item" href="/en/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
         <span class="title" style="margin-bottom: 8px; display: block;">Article</span>
-        <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">28</span>
+        <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">29</span>
     </a>
     <a class="meta-item" href="/en/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
         <span class="title" style="margin-bottom: 8px; display: block;">Category</span>
@@ -511,7 +511,7 @@ mjx-container[display="true"] + br {
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>Categories List</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/">MO</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Geometry/">Geometry</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/">OI</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/">MO</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/">OI</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
   </aside>
 
 
@@ -520,7 +520,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>Tagcloud</h4>
       <div class="tag-clouds">
-        <a href="/en/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/en/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/en/tags/Algorithms/" style="font-size: 0.7em;">Algorithms</a> <a href="/en/tags/Geometry/" style="font-size: 0.6em;">Geometry</a> <a href="/en/tags/MO/" style="font-size: 0.65em;">MO</a> <a href="/en/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/en/tags/Reflection/" style="font-size: 0.75em;">Reflection</a> <a href="/en/tags/Solutions/" style="font-size: 0.7em;">Solutions</a> <a href="/en/tags/Training/" style="font-size: 0.65em;">Training</a>
+        <a href="/en/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/en/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/en/tags/Algorithms/" style="font-size: 0.73em;">Algorithms</a> <a href="/en/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/en/tags/MO/" style="font-size: 0.7em;">MO</a> <a href="/en/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/en/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/en/tags/Solutions/" style="font-size: 0.73em;">Solutions</a> <a href="/en/tags/Training/" style="font-size: 0.67em;">Training</a>
       </div>
   </aside>
 
@@ -562,6 +562,8 @@ mjx-container[display="true"] + br {
             
           
         
+          
+            
           
             
           
