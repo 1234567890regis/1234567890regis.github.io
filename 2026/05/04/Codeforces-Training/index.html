@@ -492,54 +492,35 @@ mjx-container[display="true"] + br {
             <img class="about-photo" src="/images/icon.webp" loading="lazy" decoding="auto" />
         </div>
     </div>
-    <div class="site-meta" style="margin-top: 10px; margin-bottom: 10px;">
-        <a class="meta-item" href="/">
-            <span class="title" style="margin-bottom: 9px">
-                主页
-            </span>
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <a class="meta-item" href="/profile">
-            <span class="title" style="margin-bottom: 9px">
-                个人资料
-            </span>
-            <i class="fa-solid fa-user"></i>
-        </a>
-        <a class="meta-item" href="/search">
-            <span class="title" style="margin-bottom: 9px">
-                搜索
-            </span>
-            <span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-        </a>
-    </div>
-    <div class="site-meta">
-        <a class="meta-item" href="/archives/">
-            <span class="title">
-                文章
-            </span>
-            <span class="count">
-                29
-            </span>
-        </a>
-        <a class="meta-item" href="/categories/">
-            <span class="title">
-                分类
-            </span>
-            <span class="count">
-                10
-            </span>
-        </a>
-        <a class="meta-item" href="/tags/">
-            <span class="title">
-                标签
-            </span>
-            <span class="count">
-                10
-            </span>
-        </a>
-    </div>
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 15px;">
+    <a class="meta-item" href="/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">主页</span>
+        <i class="fa-solid fa-house" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">个人资料</span>
+        <i class="fa-solid fa-user" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/search" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">搜索</span>
+        <i class="fa-solid fa-magnifying-glass" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+</div>
+
+<div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
+    <a class="meta-item" href="/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">文章</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">29</span>
+    </a>
+    <a class="meta-item" href="/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">分类</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">10</span>
+    </a>
+    <a class="meta-item" href="/tags/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">标签</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">10</span>
+    </a>
+</div>
 </aside>
 
             
@@ -750,7 +731,22 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
     <script>
       (function() {
@@ -763,7 +759,9 @@ mjx-container[display="true"] + br {
           btn.style.top = '20px';
           btn.style.right = '20px';
           btn.style.zIndex = '99999';
-          btn.style.padding = '8px 16px';
+          btn.style.padding = '8px 0'; // Changed horizontal padding to 0 since width is fixed
+          btn.style.width = '90px';    // <--- Added for equal width
+          btn.style.textAlign = 'center'; // <--- Added for centering text
           btn.style.fontSize = '14px';
           btn.style.fontWeight = '500';
           btn.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";

@@ -474,54 +474,35 @@ mjx-container[display="true"] + br {
             <img class="about-photo" src="/images/icon.webp" loading="lazy" decoding="auto" />
         </div>
     </div>
-    <div class="site-meta" style="margin-top: 10px; margin-bottom: 10px;">
-        <a class="meta-item" href="/">
-            <span class="title" style="margin-bottom: 9px">
-                Home
-            </span>
-            <i class="fa-solid fa-house"></i>
-        </a>
-        <a class="meta-item" href="/profile">
-            <span class="title" style="margin-bottom: 9px">
-                Profile
-            </span>
-            <i class="fa-solid fa-user"></i>
-        </a>
-        <a class="meta-item" href="/search">
-            <span class="title" style="margin-bottom: 9px">
-                Search
-            </span>
-            <span>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-        </a>
-    </div>
-    <div class="site-meta">
-        <a class="meta-item" href="/en/archives/">
-            <span class="title">
-                Article
-            </span>
-            <span class="count">
-                28
-            </span>
-        </a>
-        <a class="meta-item" href="/en/categories/">
-            <span class="title">
-                Category
-            </span>
-            <span class="count">
-                9
-            </span>
-        </a>
-        <a class="meta-item" href="/en/tags/">
-            <span class="title">
-                Tags
-            </span>
-            <span class="count">
-                9
-            </span>
-        </a>
-    </div>
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 15px;">
+    <a class="meta-item" href="/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Home</span>
+        <i class="fa-solid fa-house" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/profile" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Profile</span>
+        <i class="fa-solid fa-user" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/search" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Search</span>
+        <i class="fa-solid fa-magnifying-glass" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+</div>
+
+<div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
+    <a class="meta-item" href="/en/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Article</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">28</span>
+    </a>
+    <a class="meta-item" href="/en/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Category</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">9</span>
+    </a>
+    <a class="meta-item" href="/en/tags/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="font-size: 13px; margin-bottom: 8px; display: block;">Tags</span>
+        <span class="count" style="font-size: 14px; display: inline-block; height: 20px; line-height: 20px;">9</span>
+    </a>
+</div>
 </aside>
 
             
@@ -758,7 +739,9 @@ mjx-container[display="true"] + br {
           btn.style.top = '20px';
           btn.style.right = '20px';
           btn.style.zIndex = '99999';
-          btn.style.padding = '8px 16px';
+          btn.style.padding = '8px 0'; // Changed horizontal padding to 0 since width is fixed
+          btn.style.width = '90px';    // <--- Added for equal width
+          btn.style.textAlign = 'center'; // <--- Added for centering text
           btn.style.fontSize = '14px';
           btn.style.fontWeight = '500';
           btn.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
