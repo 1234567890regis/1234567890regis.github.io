@@ -17,16 +17,16 @@
   
     <meta name="keywords" content="OI, Solutions" />
   
-  <meta name="description" content="我的 Luogu P7164 [COCI 2020&#x2F;2021 #1] 3D Histogram 题解。">
+  <meta name="description" content="我的 洛谷 P7164 [COCI 2020&#x2F;2021 #1] 3D Histogram 题解。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P7164 [COCI 2020&#x2F;2021">
 <meta property="og:url" content="https://1234567890regis.github.io/2024/07/30/P7164-Solution/index.html">
 <meta property="og:site_name" content="Regis&#39;s Blog">
-<meta property="og:description" content="我的 Luogu P7164 [COCI 2020&#x2F;2021 #1] 3D Histogram 题解。">
+<meta property="og:description" content="我的 洛谷 P7164 [COCI 2020&#x2F;2021 #1] 3D Histogram 题解。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://1234567890regis.github.io/images/icon.ico">
 <meta property="article:published_time" content="2024-07-29T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-06-04T11:32:31.503Z">
+<meta property="article:modified_time" content="2026-06-05T04:40:21.322Z">
 <meta property="article:author" content="1234567890regis">
 <meta property="article:tag" content="OI">
 <meta property="article:tag" content="Solutions">
@@ -272,13 +272,13 @@ mjx-container[display="true"] + br {
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1780572751503"></time> 前。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1780634421322"></time> 前。</p></div>
             </div>
             
             
             
             <hr />
-            <div itemprop="articleBody"><p>我的 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7164">Luogu P7164 [COCI 2020/2021 #1] 3D Histogram</a> 题解。</p>
+            <div itemprop="articleBody"><p>我的 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P7164">洛谷 P7164 [COCI 2020/2021 #1] 3D Histogram</a> 题解。</p>
 <span id="more"></span>
 <p>本人太菜，写一个通俗易懂的<del>非正解</del>做法。</p>
 <p>第一个思路是用 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.345ex" height="1.912ex" role="img" focusable="false" viewBox="0 -833.9 1036.6 844.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mn" transform="translate(633,363) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></svg></mjx-container> 骗分，怎么骗分也非常简单，用 Sparse Table 即可。</p>
@@ -380,7 +380,7 @@ mjx-container[display="true"] + br {
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "https://1234567890regis.github.io/2024/07/30/P7164-Solution/";
             const title         = "「P7164 [COCI 2020/2021」";
-            const excerpt       = `我的 Luogu P7164 [COCI 2020/2021 #1] 3D Histogram 题解。`;
+            const excerpt       = `我的 洛谷 P7164 [COCI 2020/2021 #1] 3D Histogram 题解。`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -402,7 +402,7 @@ mjx-container[display="true"] + br {
                     <a class="tag-none-link" href="/tags/OI/" rel="tag">OI</a>, <a class="tag-none-link" href="/tags/Solutions/" rel="tag">Solutions</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2026-06-04T11:32:31.503Z" itemprop="dateModified">最后编辑：2026-06-04</time>
+                    <time datetime="2026-06-05T04:40:21.322Z" itemprop="dateModified">最后编辑：2026-06-05</time>
                 </div>
             </div>
         </footer>
@@ -480,7 +480,7 @@ mjx-container[display="true"] + br {
     <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
         <a class="meta-item" href="/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
             <span class="title" style="margin-bottom: 8px; display: block;">文章</span>
-            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">29</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">30</span>
         </a>
         <a class="meta-item" href="/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
             <span class="title" style="margin-bottom: 8px; display: block;">分类</span>
@@ -499,7 +499,7 @@ mjx-container[display="true"] + br {
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/">MO</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/">OI</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Solutions/">Solutions</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/">MO</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Algebra/">Algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/">OI</a><span class="category-list-count">26</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Solutions/">Solutions</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Training/">Training</a><span class="category-list-count">3</span></li></ul></li></ul>
   </aside>
 
 
@@ -508,7 +508,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/tags/Algorithms/" style="font-size: 0.73em;">Algorithms</a> <a href="/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/tags/MO/" style="font-size: 0.7em;">MO</a> <a href="/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/tags/Solutions/" style="font-size: 0.73em;">Solutions</a> <a href="/tags/Training/" style="font-size: 0.67em;">Training</a>
+        <a href="/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/tags/Algebra/" style="font-size: 0.6em;">Algebra</a> <a href="/tags/Algorithms/" style="font-size: 0.71em;">Algorithms</a> <a href="/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/tags/MO/" style="font-size: 0.69em;">MO</a> <a href="/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/tags/Solutions/" style="font-size: 0.74em;">Solutions</a> <a href="/tags/Training/" style="font-size: 0.66em;">Training</a>
       </div>
   </aside>
 
@@ -550,6 +550,8 @@ mjx-container[display="true"] + br {
             
           
         
+          
+            
           
             
           
