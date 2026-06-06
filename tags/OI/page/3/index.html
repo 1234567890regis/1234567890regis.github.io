@@ -488,7 +488,7 @@ mjx-container[display="true"] + br {
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/OI/">OI</a> <a class="label-link" href="/categories/OI/Solutions/">Solutions</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2024/07/30/P7164-Solution/" itemprop="mainEntityOfPage"><span itemprop="name headline">P7164 [COCI 2020/2021</span></a>
+                        <h2 class="kratos-entry-title-new"><a href="/2024/07/30/P7164-Solution/" itemprop="mainEntityOfPage"><span itemprop="name headline">P7164 [COCI 2020/2021] 3D Histogram 题解</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
                         <p itemProp="description">
@@ -855,7 +855,22 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
     <script>
       (function() {

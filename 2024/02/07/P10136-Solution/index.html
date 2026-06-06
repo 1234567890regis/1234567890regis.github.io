@@ -384,7 +384,7 @@ mjx-container[display="true"] + br {
             
             
             <div class="nav-next clearfix">
-                <a title=" P7164 [COCI 2020/2021" href="/2024/07/30/P7164-Solution/">下一篇 &gt;</a>
+                <a title=" P7164 [COCI 2020/2021] 3D Histogram 题解" href="/2024/07/30/P7164-Solution/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -671,7 +671,22 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
     <script>
       (function() {
