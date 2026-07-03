@@ -396,7 +396,7 @@ mjx-container[display="true"] + br {
 <li>0:20-0:45 mins: Write P2 75pts</li>
 </ul>
 <p>I first start with O(n^2) to verify my DP's correctness. I got the DP transition wrong at first, but after 10 minutes of debugging, I got the correct transition formula and submitted. 64pts.</p>
-<p>Taking a look at the transition formula, I realize that it is just some linear combination, so I can easily use CHT to optimize it. However, since the rest of the solution was only worth 25pts, I decided not to write it first and instead tried to “maximize my score” by trying other problems first.</p>
+<p>Taking a look at the transition formula, I realize that it is just some linear combination, so I can easily use CHT to optimize it. However, since the rest of the solution was only worth 25pts, I decided not to write it first and instead tried to "maximize my score" by trying other problems first.</p>
 <p>I first wrote an easy 11pts to get 75pts total in P2. Since my strategy is to try batch problems first, I decided to go on to P3.</p>
 <ul>
 <li>0:45-1:10 mins: Think P3</li>
@@ -408,7 +408,7 @@ mjx-container[display="true"] + br {
 <li>1:10-1:30 mins: Think P1</li>
 </ul>
 <p>By looking at subtasks, I quickly realized that this problem is a two-step interactive problem: find a specific pattern, and then use this pattern to quickly find information.</p>
-<p>So I start thinking about how to find the patterns (“rainbow” and “big blob”). After thinking for some time, I realize that this is still very hard. So I decided to AC P2 first.</p>
+<p>So I start thinking about how to find the patterns ("rainbow" and "big blob"). After thinking for some time, I realize that this is still very hard. So I decided to AC P2 first.</p>
 <ul>
 <li>1:30-1:40 mins: AC P2</li>
 </ul>
@@ -419,17 +419,17 @@ mjx-container[display="true"] + br {
 </ul>
 <p>I decided to spend time on P1 because the P3 batch seems undoable. I started by doing Subtask 1, which is very easy. I used 7 mins to get Subtask 1 AC.</p>
 <p>Then I started doing Subtask 2 and 4. I quickly realize that I can do it by using binary search. I used another 11 mins to get Subtask 2 AC and Subtask 4 18pts.</p>
-<p>Then I started doing Subtask 3 or the full solution. I'm sure that I needed to find either a “rainbow” or a “big blob” first. I first started exploring the possibilities of the query, which are things I can do.</p>
+<p>Then I started doing Subtask 3 or the full solution. I'm sure that I needed to find either a "rainbow" or a "big blob" first. I first started exploring the possibilities of the query, which are things I can do.</p>
 <p>I found that I can do the following:</p>
 <ul>
-<li>Given a “big blob”, a set S, and a color x, determine whether x is in S or not. This is by querying (S+x+stuff from big blob) and (S + stuff from big blob) and seeing if anything changes.</li>
+<li>Given a "big blob", a set S, and a color x, determine whether x is in S or not. This is by querying (S+x+stuff from big blob) and (S + stuff from big blob) and seeing if anything changes.</li>
 </ul>
 <p>However, I don't see anything that can be done with this operation.</p>
 <p>After another while of thinking, I found another thing I can do with the query:</p>
 <ul>
 <li>Given any n - 1 squares, find all squares that do not share the same color as any of these n - 1 squares. This is by replacing the first square with all n^2 other squares, and seeing if it is equal to the minimum.</li>
 </ul>
-<p>I thought that this operation was very useful, and then tried to quickly construct a “rainbow” set. However, there were a lot of corner cases, and I failed.</p>
+<p>I thought that this operation was very useful, and then tried to quickly construct a "rainbow" set. However, there were a lot of corner cases, and I failed.</p>
 <p>I decided to skip P1 first and try doing P3.</p>
 <ul>
 <li>2:45-3:25 mins: Think P3</li>
@@ -442,7 +442,7 @@ mjx-container[display="true"] + br {
 <li>3:25-4:00 mins: Continue thinking P1</li>
 </ul>
 <p>After a lot of thinking, I found a very mysterious solution that finds a rainbow set in 4n^2 queries.</p>
-<p>Still, I don't know how to use a rainbow set. Maybe it isn't even useful, since the subtasks indicate that a “big blob” might be more useful instead.</p>
+<p>Still, I don't know how to use a rainbow set. Maybe it isn't even useful, since the subtasks indicate that a "big blob" might be more useful instead.</p>
 <p>I tried thinking about a full solution. I found that it is implausible to quickly determine many squares at once, so the full solution must be about 2.7 queries per square. After thinking about what information I haven't used, I realized I must make use of the value itself instead of simply comparing two return values.</p>
 <p>But to make use of the value, I must query something like 1, 2, 2, 3, 3, 3, …, sqrt(N), …, sqrt(N), but this only covers sqrt(N) values. Now I have to query sqrt(N) times per square, which is even worse than log(N). I have no further ideas, so I discarded this idea.</p>
 <p>After more thinking, I came up with an extremely mysterious randomized solution, which I thought could run in O(cn^2 log n), but after I implemented it, it turned out to be fake.</p>
@@ -455,7 +455,7 @@ mjx-container[display="true"] + br {
 <ul>
 <li>4:15-4:30 mins: AC P1 Subtask 3</li>
 </ul>
-<p>After switching back to P1, I suddenly realized that there exists a no-brainer n^3 solution to find a “rainbow”. Adding the n^3 brute-force, I came up with a solution that ACed P1 Subtask 3.</p>
+<p>After switching back to P1, I suddenly realized that there exists a no-brainer n^3 solution to find a "rainbow". Adding the n^3 brute-force, I came up with a solution that ACed P1 Subtask 3.</p>
 <ul>
 <li>4:30-4:43 mins: AC P3 Subtask 3</li>
 </ul>
@@ -498,7 +498,7 @@ mjx-container[display="true"] + br {
 <ul>
 <li>1:20-1:50 mins: Try P2</li>
 </ul>
-<p>I decided to write a helper function that might also be useful for Subtask 2. The function's purpose is to assign “identities” to each player, so I can always assume the smaller one loses to the bigger one and let the function do the rest. However, I keep getting WA on the samples, and after debugging it, I submit and get WA 0pts.</p>
+<p>I decided to write a helper function that might also be useful for Subtask 2. The function's purpose is to assign "identities" to each player, so I can always assume the smaller one loses to the bigger one and let the function do the rest. However, I keep getting WA on the samples, and after debugging it, I submit and get WA 0pts.</p>
 <p>I quickly realized that my function was wrong, since it also needs to swap the identities of players who competed with them. And it is extremely complicated to implement. So I decided to switch to P3 first.</p>
 <ul>
 <li>1:50-2:25 mins: Get P3 53pts</li>
@@ -609,7 +609,7 @@ mjx-container[display="true"] + br {
 </li>
 </ul>
 <p><em>I now have an advantage, because I have nothing to lose.</em> - 1234567890regis</p>
-<h2 id="Fun-Stuff"><a href="#Fun-Stuff" class="headerlink" title="Fun Stuff"></a>Fun Stuff</h2><p>When searching through my old files, I suddenly found an Excel file called “Teammates”. There, I listed some people whom I would like to be teammates with. Here is the content:</p>
+<h2 id="Fun-Stuff"><a href="#Fun-Stuff" class="headerlink" title="Fun Stuff"></a>Fun Stuff</h2><p>When searching through my old files, I suddenly found an Excel file called "Teammates". There, I listed some people whom I would like to be teammates with. Here is the content:</p>
 <p><img src="https://cdn.luogu.com.cn/upload/image_hosting/kpjhdd62.png" alt=""></p>
 <p>Pure coincidentally, the eight people listed in my file just happened to be the top 8 in TFT.</p>
 <h2 id="Future"><a href="#Future" class="headerlink" title="Future"></a>Future</h2><p>I think I will take a temporary break from OI and refresh my mind a bit, especially for the final exam. I will also start preparing for IMO training at the same time. But I will continue doing more OI problems, of course, especially non-batch.</p>
@@ -645,7 +645,7 @@ mjx-container[display="true"] + br {
             </div>
             <div class="share-int">
                 <div class="qrcode" id="wechat-qr"></div>
-                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+                <p>打开微信"扫一扫"，打开网页后点击屏幕右上角分享按钮</p>
             </div>
         </a>
         <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
@@ -1010,7 +1010,22 @@ mjx-container[display="true"] + br {
 <!-- Extra support for third-party plguins  -->
 
 
-    </body>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
 </html>
     <script>
       (function() {
