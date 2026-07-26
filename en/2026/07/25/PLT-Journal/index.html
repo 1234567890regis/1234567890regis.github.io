@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en,default">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/icon.ico">
+  
+  <title>La Salle-Pui Ching Programming Challenge Journal | Regis&#39;s Blog</title>
+  
+  <meta name="author" content="1234567890regis" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="Journal, OI" />
+  
+  <meta name="description" content="La Salle-Pui Ching Programming Challenge journal.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="La Salle-Pui Ching Programming Challenge Journal">
+<meta property="og:url" content="https://1234567890regis.github.io/en/2026/07/25/PLT-Journal/index.html">
+<meta property="og:site_name" content="Regis&#39;s Blog">
+<meta property="og:description" content="La Salle-Pui Ching Programming Challenge journal.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://1234567890regis.github.io/en/images/icon.ico">
+<meta property="article:published_time" content="2026-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-26T14:40:22.704Z">
+<meta property="article:author" content="1234567890regis">
+<meta property="article:tag" content="Journal">
+<meta property="article:tag" content="OI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1234567890regis.github.io/en/images/icon.ico">
+  
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/en/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/en/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/en/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/en/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/en/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/en/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+  
+    <link rel="stylesheet" href="/en/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/en/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/en/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+
+<meta name="generator" content="Hexo 8.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/en/">Regis&#39;s Blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/en/">
+                        <h2><div class="title_example" style="font-size: 80px;"><span style="font-size: 80px; margin-right:25px">Regis&#39;s</span> <span style="font-size: 80px;">Blog</span></div></h2> <br>
+                        <span>For Little Cuties UwU</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://1234567890regis.github.io/en/2026/07/25/PLT-Journal/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">La Salle-Pui Ching Programming Challenge Journal</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2026-07-24T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2026-07-25</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> Author <span itemprop="name">1234567890regis</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~4.76K
+                        
+                        Words
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        View Count: <span id="twikoo_visitors"> </span>
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <!-- 
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>This article is last modified in <time datetime="1785076822704"></time>.</p></div>
+            </div>
+             -->
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p>La Salle-Pui Ching Programming Challenge journal.</p>
+<span id="more"></span>
+<p>Original: Chinese</p>
+<p>Translation: Gemini</p>
+<p>Hereinafter referred to as PLT.</p>
+<p>Registration was required just a few days before NOI. Although PLT clashed with the HKMO training team sessions, I still decided to participate in PLT.</p>
+<p>From my past experience competing in ACM, there's a rather strange phenomenon: a three-person team shouldn't consist entirely of top-tier players, otherwise they will underperform (who knows why). My best runs were either flying solo, or when qwertim and I teamed up with General Huang as our assistant. My absolute worst run was with Adam and ltw—both IOI team members—where we ended up dead last in HKOI. Truly hilarious.</p>
+<p>So when Matthew invited Andy and me to form a team, it was exactly what I wanted. Both of them are juniors who excel at math in our school. Plus, Andy frequently solves ad-hoc problems that stump me; Andy and I even pulled off some insane team results back at the HKOI training camp. I didn't dare carry the older students from school, because it wouldn't feel right if I ended up writing code the entire time, and our strengths wouldn't complement each other.</p>
+<p>Thus, the team was formed, and we successfully became the official PCMS team. We named ourselves Polynomial Laplace Transform.</p>
+<p>Our strategy was simple. I would write code the whole time and handle all the algorithmic problems, while the two of them tackled the ad-hoc ones.</p>
+<h2 id="The-Contest"><a href="#The-Contest" class="headerlink" title="The Contest"></a>The Contest</h2><p>Before the contest started, Matthew introduced us to the research content of this year's Fields Medal, and then roughly outlined a proof method for the 2D Kakeya conjecture (Note: this year's Fields Medal was for 3D). I listened with great interest. He also said he learnt how to prove Fermat's Last Theorem. Absolute legend.</p>
+<p>The contest began. Within the first hour, we cleared 5 warmup problems and felt in great shape. Then I noticed that many teams were solving A and C, so I had Andy think about A while I focused on C.</p>
+<p>I spent 20 minutes seriously thinking through C, while Andy was also developing some ideas for A. For C, you could just iterate through the starting points and maintain the endpoints using a <code>set</code>. I implemented C first, but then realized one step was flawed and I had overcomplicated things. I quickly fixed it and solved the problem.</p>
+<p>Andy came up with a brilliant position-skipping solution, which felt incredibly smart. I suggested a greedy approach, and then realized combining them worked perfectly. We took a time penalty but successfully locked it down.</p>
+<p>Next, we looked at J, which some people had solved. I realized it was a classic hashing practice problem. I initially wrote a <code>map</code> solution but got TLE, so I switched to hashing. I tried single-modulo hashing first but got WA, changed it to double-modulo and still got WA, only to finally discover a typo somewhere. Once fixed, it ACed, but bruh, we racked up so much time penalty.</p>
+<p>At this point, I planned to tackle F, which was a harder version of a simple problem shx had set among the SMSOIers. After thinking for 5 minutes, I saw that Adam ACed F, so it was definitely doable.</p>
+<p>I spent 20 minutes writing the code, but since it was a probability problem, it was hard to debug, so I spent another 20 minutes debugging. It felt like a terrible waste of time. Meanwhile, Andy and Matthew worked together and figured out a solution for L, which surprised me because no one had passed L yet. To be safe, I kept working on F, but it threw another TLE upon submission. I tweaked the square-root decomposition threshold, but it still TLE'd.</p>
+<p>Then we realized I couldn't submit anything else because one of my previous submissions was stuck in Pending. At this point, there were only 5 minutes left in the contest, and we felt completely hopeless. Even when the contest ended, it was still Pending. Truly doomed.</p>
+<p>Or so we thought?</p>
+<p>It was announced that the contest would be extended by 10 minutes because the judging server was heavily lagging in the final 5 minutes, though writing new code was forbidden. Then, looking closely, that Pending submission actually passed!</p>
+<p>We were saved!</p>
+<p>In the end, we happily took RK 4. It was another classic ACM performance—most solved problems alongside the highest time penalty. The exact same thing happened at the HIT Shenzhen ACM last time.</p>
+<p>Just made the cutoff for a Gold Award, an absolute win. I became the match MVP by coding 9 problems. Honestly, if I hadn't spent so long debugging F at the end, we could have totally cleared L and hit RK 1. But that's on me, since my coding speed is naturally slow.</p>
+<p>Happily brought home a trophy and a medal. Took a big group photo, hung out with Adam, sang the NOI versions of "Run, Youth" and "Crossing Bridge" together, packed up, and cleared out.</p>
+<h2 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h2></div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">This article uses <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> as a license.</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> Share</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信"扫一扫"，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://1234567890regis.github.io/en/2026/07/25/PLT-Journal/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://1234567890regis.github.io/en/2026/07/25/PLT-Journal/";
+            const title         = "「La Salle-Pui Ching Programming Challenge Journal」";
+            const excerpt       = `La Salle-Pui Ching Programming Challenge journal.`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/en/tags/Journal/" rel="tag">Journal</a>, <a class="tag-none-link" href="/en/tags/OI/" rel="tag">OI</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2026-07-26T14:40:22.704Z" itemprop="dateModified">Last modify:2026-07-26</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" NOI Journal" href="/en/2026/07/24/NOI-Journal/">&lt; Newer</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://twikoo-blond-beta.vercel.app/', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/en/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/icon.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 15px;">
+    <a class="meta-item" href="/en/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">Home</span>
+        <i class="fa-solid fa-house" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/en/profile/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">Profile</span>
+        <i class="fa-solid fa-user" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/en/search/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">Search</span>
+        <i class="fa-solid fa-magnifying-glass" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    </div>
+
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
+        <a class="meta-item" href="/en/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">Article</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">37</span>
+        </a>
+        <a class="meta-item" href="/en/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">Categories</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">11</span>
+        </a>
+        <a class="meta-item" href="/en/tags/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">Tags</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">10</span>
+        </a>
+    </div>
+</aside>
+
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>Categories List</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/">MO</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Algebra/">Algebra</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/">OI</a><span class="category-list-count">32</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Journal/">Journal</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Solutions/">Solutions</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/">Training</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/en/categories/OI/Training/Journal/">Journal</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix" style="border-radius: 10px">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>Tagcloud</h4>
+      <div class="tag-clouds">
+        <a href="/en/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/en/tags/Algebra/" style="font-size: 0.63em;">Algebra</a> <a href="/en/tags/Algorithms/" style="font-size: 0.74em;">Algorithms</a> <a href="/en/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/en/tags/Journal/" style="font-size: 0.66em;">Journal</a> <a href="/en/tags/MO/" style="font-size: 0.69em;">MO</a> <a href="/en/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/en/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/en/tags/Solutions/" style="font-size: 0.77em;">Solutions</a> <a href="/en/tags/Training/" style="font-size: 0.71em;">Training</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>Recent Posts</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/en/2026/07/25/PLT-Journal/"><i class="fa  fa-book"></i> La Salle-Pui Ching Programming Challenge Journal</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/en/2026/07/24/NOI-Journal/"><i class="fa  fa-book"></i> NOI Journal</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/en/2026/07/16/Pre-NOI-Training/"><i class="fa  fa-book"></i> Pre-NOI Training</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/en/2026/07/02/HKOI-Training-Camp-Journal/"><i class="fa  fa-book"></i> HKOI Training Camp Journal</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/en/2026/06/21/P13448-Solution/"><i class="fa  fa-book"></i> P13448 [GCJ 2009 Finals] Year of More Code Jam Solution</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div style="font-size: 15px">
+                            <li>&copy; 2026 Regis's Blog Copyright.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by 1234567890regis.</li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/en/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/en/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/en/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/en/";
+</script>
+
+
+    <script async src="/en/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="/en/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/en/js/kratosr.min.js"></script>
+<script defer src="/en/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
+    <script>
+      (function() {
+        function initLanguageButton() {
+          if (document.getElementById('lang-switcher-btn')) return;
+
+          var btn = document.createElement('a');
+          btn.id = 'lang-switcher-btn';
+          btn.style.position = 'fixed';
+          btn.style.top = '20px';
+          btn.style.right = '20px';
+          btn.style.zIndex = '99999';
+          btn.style.padding = '8px 0'; // Changed horizontal padding to 0 since width is fixed
+          btn.style.width = '90px';    // <--- Added for equal width
+          btn.style.textAlign = 'center'; // <--- Added for centering text
+          btn.style.fontSize = '14px';
+          btn.style.fontWeight = '500';
+          btn.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+          btn.style.color = '#ffffff';
+          btn.style.backgroundColor = '#87CEFA';
+          btn.style.borderRadius = '24px';
+          btn.style.textDecoration = 'none';
+          btn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+          btn.style.transition = 'all 0.2s ease';
+          btn.style.display = 'none';
+
+          btn.onmouseover = function() {
+            this.style.backgroundColor = '#6495ED';
+            this.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
+          };
+          btn.onmouseout = function() {
+            this.style.backgroundColor = '#87CEFA';
+            this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+          };
+
+          document.body.appendChild(btn);
+
+          function updateButtonState() {
+            var currentPath = window.location.pathname;
+            var isEnglish = currentPath.indexOf('/en/') !== -1 || currentPath.endsWith('/en') || currentPath.endsWith('/en/');
+
+            if (isEnglish) {
+              if (btn.innerText !== '中文') btn.innerText = '中文';
+              var target = currentPath.replace(/\/en(\/|$)/, '$1');
+              if (!target.startsWith('/')) target = '/' + target;
+              if (btn.getAttribute('href') !== target) btn.href = target;
+            } else {
+              if (btn.innerText !== 'English') btn.innerText = 'English';
+              var base = currentPath.startsWith('/') ? currentPath : '/' + currentPath;
+              var targetEn = (base === '/') ? '/en/' : '/en' + base;
+              if (btn.getAttribute('href') !== targetEn) btn.href = targetEn;
+            }
+
+            if (btn.style.display !== 'inline-block') btn.style.display = 'inline-block';
+          }
+
+          updateButtonState();
+          setInterval(updateButtonState, 100);
+        }
+
+        // Initialize immediately if body exists, otherwise watch the document state
+        if (document.body) {
+          initLanguageButton();
+        } else {
+          document.addEventListener('DOMContentLoaded', initLanguageButton);
+        }
+      })();
+    </script>
+  

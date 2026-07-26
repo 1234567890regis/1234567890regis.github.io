@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN,default">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/icon.ico">
+  
+  <title>培正喇沙挑战赛游记 | Regis&#39;s Blog</title>
+  
+  <meta name="author" content="1234567890regis" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="Journal, OI" />
+  
+  <meta name="description" content="培正喇沙挑战赛游记。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="培正喇沙挑战赛游记">
+<meta property="og:url" content="https://1234567890regis.github.io/2026/07/25/PLT-Journal/index.html">
+<meta property="og:site_name" content="Regis&#39;s Blog">
+<meta property="og:description" content="培正喇沙挑战赛游记。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1234567890regis.github.io/images/icon.ico">
+<meta property="article:published_time" content="2026-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-26T13:57:41.554Z">
+<meta property="article:author" content="1234567890regis">
+<meta property="article:tag" content="Journal">
+<meta property="article:tag" content="OI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1234567890regis.github.io/images/icon.ico">
+  
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+
+<meta name="generator" content="Hexo 8.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Regis&#39;s Blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2><div class="title_example" style="font-size: 80px;"><span style="font-size: 80px; margin-right:25px">Regis&#39;s</span> <span style="font-size: 80px;">Blog</span></div></h2> <br>
+                        <span>For Little Cuties UwU</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://1234567890regis.github.io/2026/07/25/PLT-Journal/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">培正喇沙挑战赛游记</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2026-07-24T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2026-07-25</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">1234567890regis</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            1466
+                        
+                        字
+                    </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span id="twikoo_visitors"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            <!-- 
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1785074261554"></time> 前。</p></div>
+            </div>
+             -->
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p>培正喇沙挑战赛游记。</p>
+<span id="more"></span>
+<p>以下简称 PLT（培喇挑）。</p>
+<p>NOI 前几天就要报名了。虽然 PLT 和 HKMO 集训队训练冲了，但是我还是打算参加 PLT。</p>
+<p>之前打 ACM 有一个比较奇怪的经验，就是一个三人队不能全部都很强，不然会发挥失误（为什么呢）。我打的最好的几次，就是我自己一个人打，其次是我和 qwertim 带着黄元帅打下手。而打的最差一次就是和 Adam 和 ltw 两个 IOI 队成员，最后排 HKOI 倒数第一，太幽默了。</p>
+<p>因此，Matthew 邀请 Andy 和我组队，真是正合我意。因为他们两个是学校里数学很好的，都是初中生。加上 Andy 经常会做我不会做的 ad-hoc，我和 Andy 在 HKOI 集训营里拿到了很逆天的团体成绩。学校里年长的几位我不敢带，因为如果我一直写代码感觉不是很好，并且优势并不互补。</p>
+<p>于是，队就组好了，我们也成功成为 PCMS 正队。我们取名 Polynomial Laplace Transform，即多项式拉普拉斯变换。</p>
+<p>我们的策略很简单。我全程打代码，然后负责所有算法题，他们两个负责 ad-hoc。</p>
+<h2 id="比赛"><a href="#比赛" class="headerlink" title="比赛"></a>比赛</h2><p>比赛开始前，Matthew 给我们介绍了今年 Fields 奖的研究内容，然后口糊了 2D Kakeya 猜想的证明方法（注：今年 Fields 奖是 3D），我听得津津有味。他还表示他学会了如何证明费马大定理，太强了。</p>
+<p>比赛开始。在前一个小时里，我们切掉了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></g></g></g></svg></mjx-container> 道签到题，感觉手感挺好。然后我看到 A 和 C 有很多人切，于是我让 Andy 想 A，我想 C。</p>
+<p>我用了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟严肃思考出了 C，此时 Andy 对 A 也有想法。C 是可以直接枚举起点然后用 <code>set</code> 维护终点就行了。我先实现了 C，然后发现有一步假了，发现想复杂了，于是迅速改完切题。</p>
+<p>Andy 给出了一个精妙的跳位解法，我感觉很神。我给出了一个贪心解法，然后我发现合并一下就对了。吃了发罚时就拿下了。</p>
+<p>再看有人切的 J。我发现是哈希练习题，我先写了 <code>map</code> 做法，结果 TLE 了，于是严肃改为哈希。我先用单模哈希但 WA 了，改为双模又 WA 了，最后发现有一个地方改错了。改掉后 AC 了，但怎么吃了这么多罚时。</p>
+<p>此时我打算做 F，因为是 shx 在 SMSOIer 里出的一道简单题的加强版。想了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></g></g></g></svg></mjx-container> 分钟看到 Adam 切 F 了，确实是可做题。</p>
+<p>我用了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟写代码，但因为是概率题不好调，所以又调了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g></g></g></svg></mjx-container> 分钟，感觉很劣。此时 Andy 和 Matthew 一起想出了 L 的解法，我很惊讶因为 L 没有人过。因此我为了保险起见继续写 F，结果交上去又 TLE 了。调了调根号分治的阀值，但还是 TLE。</p>
+<p>然后我们发现我提交不了了，因为之前有一次提交一直在 Pending。此时距离比赛结束只有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></g></g></g></svg></mjx-container> 分钟，感觉没救了。最后比赛结束了还在 Pending，真的没救了。</p>
+<p>吗。</p>
+<p>宣布考试延后十分钟，因为最后 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path></g></g></g></svg></mjx-container> 分钟评测机很卡，但要求不能写新的代码。结果定睛一看，bsgm 那个 Pending 的提交过了！</p>
+<p>有救了！</p>
+<p>最后喜提 RK <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.532ex" role="img" focusable="false" viewBox="0 -677 500 677"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></g></g></g></svg></mjx-container>，又是日常 ACM 发挥，拿到最多题数和最大罚时。上次哈工大深圳 ACM 也是这样。</p>
+<p>刚好金奖，赢麻了。成为全场 MVP，写了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path></g></g></g></svg></mjx-container> 道题。事实上如果最后 F 没调这么久的话完全可以切掉 L，这样就 RK <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container> 了。不过这是我的问题，因为我本来打代码就很慢。</p>
+<p>喜提奖杯+奖牌各一个。大合影，找 Adam 玩，合唱 NOI 版奔跑吧少年和过桥，收拾，跑路了。</p>
+<h2 id="The-End"><a href="#The-End" class="headerlink" title="The End"></a>The End</h2></div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信"扫一扫"，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://1234567890regis.github.io/2026/07/25/PLT-Journal/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://1234567890regis.github.io/2026/07/25/PLT-Journal/";
+            const title         = "「培正喇沙挑战赛游记」";
+            const excerpt       = `培正喇沙挑战赛游记。`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/Journal/" rel="tag">Journal</a>, <a class="tag-none-link" href="/tags/OI/" rel="tag">OI</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2026-07-26T13:57:41.554Z" itemprop="dateModified">最后编辑：2026-07-26</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" NOI 游记" href="/2026/07/24/NOI-Journal/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://twikoo-blond-beta.vercel.app/', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/icon.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 15px;">
+    <a class="meta-item" href="/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">主页</span>
+        <i class="fa-solid fa-house" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/profile/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">个人资料</span>
+        <i class="fa-solid fa-user" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    <a class="meta-item" href="/search/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+        <span class="title" style="margin-bottom: 8px; display: block;">搜索</span>
+        <i class="fa-solid fa-magnifying-glass" style="display: inline-block; height: 20px; line-height: 20px;"></i>
+    </a>
+    </div>
+
+    <div class="site-meta" style="display: flex; justify-content: space-between; align-items: center; width: 100%; text-align: center; margin-bottom: 10px;">
+        <a class="meta-item" href="/archives/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">文章</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">37</span>
+        </a>
+        <a class="meta-item" href="/categories/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">分类</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">11</span>
+        </a>
+        <a class="meta-item" href="/tags/" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1; width: 33.33%; text-decoration: none;">
+            <span class="title" style="margin-bottom: 8px; display: block;">标签</span>
+            <span class="count" style="display: inline-block; height: 20px; line-height: 20px;">10</span>
+        </a>
+    </div>
+</aside>
+
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/">MO</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Algebra/">Algebra</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Geometry/">Geometry</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/MO/Solutions/">Solutions</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/">OI</a><span class="category-list-count">32</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Algorithms/">Algorithms</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Journal/">Journal</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Reflection/">Reflection</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Solutions/">Solutions</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Training/">Training</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OI/Training/Journal/">Journal</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix" style="border-radius: 10px">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/Advanced-Math/" style="font-size: 0.6em;">Advanced Math</a> <a href="/tags/Algebra/" style="font-size: 0.63em;">Algebra</a> <a href="/tags/Algorithms/" style="font-size: 0.74em;">Algorithms</a> <a href="/tags/Geometry/" style="font-size: 0.63em;">Geometry</a> <a href="/tags/Journal/" style="font-size: 0.66em;">Journal</a> <a href="/tags/MO/" style="font-size: 0.69em;">MO</a> <a href="/tags/OI/" style="font-size: 0.8em;">OI</a> <a href="/tags/Reflection/" style="font-size: 0.77em;">Reflection</a> <a href="/tags/Solutions/" style="font-size: 0.77em;">Solutions</a> <a href="/tags/Training/" style="font-size: 0.71em;">Training</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2026/07/25/PLT-Journal/"><i class="fa  fa-book"></i> 培正喇沙挑战赛游记</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/07/24/NOI-Journal/"><i class="fa  fa-book"></i> NOI 游记</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/07/16/Pre-NOI-Training/"><i class="fa  fa-book"></i> NOI 赛前集训</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/07/02/HKOI-Training-Camp-Journal/"><i class="fa  fa-book"></i> HKOI 省队集训营游记</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/06/21/P13448-Solution/"><i class="fa  fa-book"></i> P13448 [GCJ 2009 Finals] Year of More Code Jam 题解</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div style="font-size: 15px">
+                            <li>&copy; 2026 Regis's Blog 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by 1234567890regis.</li>
+                        </div>
+                        <div style="font-size: 15px">
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div style="font-size: 15px">
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
+    <script>
+      (function() {
+        function initLanguageButton() {
+          if (document.getElementById('lang-switcher-btn')) return;
+
+          var btn = document.createElement('a');
+          btn.id = 'lang-switcher-btn';
+          btn.style.position = 'fixed';
+          btn.style.top = '20px';
+          btn.style.right = '20px';
+          btn.style.zIndex = '99999';
+          btn.style.padding = '8px 0'; // Changed horizontal padding to 0 since width is fixed
+          btn.style.width = '90px';    // <--- Added for equal width
+          btn.style.textAlign = 'center'; // <--- Added for centering text
+          btn.style.fontSize = '14px';
+          btn.style.fontWeight = '500';
+          btn.style.fontFamily = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+          btn.style.color = '#ffffff';
+          btn.style.backgroundColor = '#87CEFA';
+          btn.style.borderRadius = '24px';
+          btn.style.textDecoration = 'none';
+          btn.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+          btn.style.transition = 'all 0.2s ease';
+          btn.style.display = 'none';
+
+          btn.onmouseover = function() {
+            this.style.backgroundColor = '#6495ED';
+            this.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
+          };
+          btn.onmouseout = function() {
+            this.style.backgroundColor = '#87CEFA';
+            this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.15)';
+          };
+
+          document.body.appendChild(btn);
+
+          function updateButtonState() {
+            var currentPath = window.location.pathname;
+            var isEnglish = currentPath.indexOf('/en/') !== -1 || currentPath.endsWith('/en') || currentPath.endsWith('/en/');
+
+            if (isEnglish) {
+              if (btn.innerText !== '中文') btn.innerText = '中文';
+              var target = currentPath.replace(/\/en(\/|$)/, '$1');
+              if (!target.startsWith('/')) target = '/' + target;
+              if (btn.getAttribute('href') !== target) btn.href = target;
+            } else {
+              if (btn.innerText !== 'English') btn.innerText = 'English';
+              var base = currentPath.startsWith('/') ? currentPath : '/' + currentPath;
+              var targetEn = (base === '/') ? '/en/' : '/en' + base;
+              if (btn.getAttribute('href') !== targetEn) btn.href = targetEn;
+            }
+
+            if (btn.style.display !== 'inline-block') btn.style.display = 'inline-block';
+          }
+
+          updateButtonState();
+          setInterval(updateButtonState, 100);
+        }
+
+        // Initialize immediately if body exists, otherwise watch the document state
+        if (document.body) {
+          initLanguageButton();
+        } else {
+          document.addEventListener('DOMContentLoaded', initLanguageButton);
+        }
+      })();
+    </script>
+  
